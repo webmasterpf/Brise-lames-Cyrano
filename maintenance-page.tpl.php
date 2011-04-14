@@ -26,7 +26,8 @@
   <script type="text/javascript"><?php /* Needed to avoid Flash of Unstyled Content in IE */ ?> </script>
 </head>
 <body class="<?php print $body_classes; ?>">
-  <div id="general">
+    <!-- TEMPLATE PAGE MAINTENANCE DE BASE  -->
+  <div id="page">
     <div id="header">
       <div id="logo-title">
 
@@ -36,15 +37,15 @@
           </a>
         <?php endif; ?>
 
-        <div id="name-and-slogan">
-          <?php if (!empty($site_name)): ?>
-            <h1 id="site-name">
+        <div id="name-and-slogan-maintenance">
+          <?php /*if (!empty($site_name)): ?>
+            <h1 id="site-name-maintenance">
               <a href="<?php print $base_path ?>" title="<?php print t('Home'); ?>" rel="home"><span><?php print $site_name; ?></span></a>
             </h1>
-          <?php endif; ?>
+          <?php endif; */?>
 
           <?php if (!empty($site_slogan)): ?>
-            <div id="site-slogan"><?php print $site_slogan; ?></div>
+            <div id="site-slogan-maintenance"><?php print $site_slogan; ?></div>
           <?php endif; ?>
         </div> <!-- /name-and-slogan -->
       </div> <!-- /logo-title -->
@@ -57,72 +58,36 @@
 
     </div> <!-- /header -->
 
- <div id="contentPage">
-
-          <!-- ______________________ CONTENT TOP _______________________ -->
-      <?php if ($breadcrumb ||$content_top ): ?>
-            <div id="content-top">
-	<span id="ariane"> <?php print $breadcrumb; ?></span>
-
-              <?php print $content_top; ?>
-            </div> <!-- /#content-top -->
-
-    <!-- ______________________ COLONNE GAUCHE _______________________ -->
-
-			  <?php if ($left): ?>
-         <div id="left-content">
-            <?php print $left; ?>
-          </div>
-             <?php endif; ?> <!-- /sidebar-left -->
-
-		<!--fin du contenu gauche -->
-
- <div id="content-inner" class="inner column center">
-
-		 <?php if ($title): ?>
-                <h1 class="title"><?php print $title; ?></h1>
-              <?php endif; ?>
+    <div id="contentPage-maintenance" class="clear-block">
 
 
-          <?php if ($mission || $messages || $help || $tabs): ?>
-            <div id="content-header">
+        <div id="left-content" class="column sidebar">
+          <?php print $left; ?>
+        </div> <!-- /sidebar-left -->
 
-              <?php if ($mission): ?>
-                <div id="mission"><?php print $mission; ?></div>
-              <?php endif; ?>
 
-              <?php print $messages; ?>
+      <div id="main" class="column"><div id="main-squeeze">
 
-              <?php print $help; ?>
-
-              <?php if ($tabs): ?>
-                <div class="tabs"><?php print $tabs; ?></div>
-              <?php endif; ?>
-
-            </div> <!-- /#content-header -->
-          <?php endif; ?>
-		  <!-- ______________________ CONTENU CENTRAL _______________________ -->
-          <div id="middle-content">
+        <div id="content">
+          <?php if (!empty($title)): ?><h1 class="title" id="page-title"><?php print $title; ?></h1><?php endif; ?>
+          <?php if (!empty($messages)): print $messages; endif; ?>
+          <div id="middle-content-maintenance" class="clear-block">
             <?php print $content; ?>
-              <?php print $feed_icons; ?>
-          </div> <!-- /#content-area -->
+          </div> <!-- /content-content -->
+        </div> <!-- /content -->
+
+      </div></div> <!-- /main-squeeze /main -->
 
 
-
-
-
-      </div> <!-- /content-inner /content -->
-
-      <?php if (!empty($right)): ?>
-        <div id="sidebar-right" class="column sidebar">
+        <div id="left-content" class="column sidebar">
           <?php print $right; ?>
         </div> <!-- /sidebar-right -->
-      <?php endif; ?>
+
 
     </div> <!-- /container -->
 
     <div id="footer-wrapper">
-      <div id="footer">
+      <div id="footer-maintenance">
         <?php print $footer_message; ?>
         <?php if (!empty($footer)): print $footer; endif; ?>
       </div> <!-- /footer -->
