@@ -1,5 +1,5 @@
-name = Brise-lames Cyrano inspired
-description = Theme pour site Brise-Lames - Design by Cyrano - Integration by Aiphes
+name = Brise-lames inspired by Cyrano
+description = Theme pour site Brise-Lames - Design and Integration by Webmaster PF
 version = VERSION
 core = 6.x
 engine = phptemplate
