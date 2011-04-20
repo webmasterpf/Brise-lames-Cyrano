@@ -34,9 +34,9 @@ function phptemplate_preprocess_page(&$vars) {
 function debug_print($var) {
   drupal_set_message('<pre>'. print_r($var, TRUE) .'</pre>');
 }
-//Webform "You have already submitted this form." message off
-function cyrano_bl_webform_view_messages($node, $teaser, $page, $submission_count, $limit_exceeded, $allowed_roles) {
-  theme_webform_view_messages($node, $teaser, $page, 0, $limit_exceeded, $allowed_roles);
+//Webform "You have already submitted this form." message off - http://drupal.org/node/1096226
+function cyrano_ce_webform_view_messages($node, $teaser, $page, $submission_count, $limit_exceeded, $allowed_roles, $closed, $cached) {
+  return theme_webform_view_messages($node, $teaser, $page, 0, $limit_exceeded, $allowed_roles, $closed, $cached);
 }
 ?>
 <?php
