@@ -533,3 +533,21 @@ background-color: white;
 .img_lien_pf{
 	border: 0;
 	}
+
+/*-------------------
+--- PAGE ERREUR -----
+!!!!!!!!!!!!!!!!!!!!!*/
+#left-content-pageErreur{
+    float: left;
+    width: 230px;
+    margin: 0;
+    padding: 0;
+}
+#content-inner-pageErreur{
+    float: left;
+    width: 500px;
+}
+#middle-content-pageErreur{
+   padding: 3px;
+}
+#right-content-pageErreur{}

@@ -26,7 +26,26 @@
 
 <!-- ______________________ PARTIE BAS GAUCHE _______________________ -->
                  <?php if ($HPBasGauche): ?>
-                 <div id="BasGaucheHP"><?php print $HPBasGauche; ?></div>
+                 <div id="BasGaucheHP"><?php print $HPBasGauche; ?>
+
+
+                        <?php if ($mission || $messages || $help || $tabs): ?>
+            <div id="content-header">
+
+              <?php if ($mission): ?>
+                <div id="mission"><?php print $mission; ?></div>
+              <?php endif; ?>
+
+              <?php print $messages; ?>
+
+              <?php print $help; ?>
+
+              <?php if ($tabs): ?>
+                <div class="tabs"><?php print $tabs; ?></div>
+              <?php endif; ?>
+                
+
+                 </div>
               <?php endif; ?>  
 		 
 <!-- ______________________ PARTIE BAS DROITE _______________________ -->

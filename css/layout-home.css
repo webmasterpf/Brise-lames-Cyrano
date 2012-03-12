@@ -20,7 +20,7 @@ Template page d'accueil custom
 }
 #logoHead{
 	height:55px !important;
-	width:335px;
+	width:250px;
 	float:left;
 	display:block;
 	margin:0;
@@ -43,7 +43,7 @@ Template page d'accueil custom
 #navPicto{
 border:0;
 height:25px;
-width:620px;
+width:732px;
 
 }
 
@@ -172,7 +172,7 @@ text-decoration:none;
 #BasGaucheHP a:hover,#BasDroitHP a:hover{
 text-decoration:underline;
 }
-/*---DIAPORAMA HOMEPAGE TEXTE DYNAMIQUE----*/
+/*---DIAPORAMA HOMEPAGE TEXTE DYNAMIQUE PANORAMIQUE----*/
 #transparency{
 background:none repeat scroll 0 0 #11B0D5;
 height:65px;
