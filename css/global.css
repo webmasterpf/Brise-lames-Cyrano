@@ -260,6 +260,9 @@ padding:10px 0;
 .views-field-diplome a:hover{
    text-decoration: underline;
 }
+.pageLycee strong{
+    color: #E2017B;
+}
 /*STYLE PAGE FORMATIONS INITIALES ARBRE*/
 #table-offre-formation, #table-offre-formation tbody{
     width: 953px !important;

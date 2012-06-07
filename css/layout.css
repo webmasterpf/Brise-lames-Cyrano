@@ -204,6 +204,47 @@ h6 {
 }
 /*-----FIN LAYOUT DE BASE-----------*/
 /***************************************/
+/*--------------------------------------------
+---- LAYOUT POUR PAGE.TPL ET NODE.TPL OVERRIDE
+**********************************************
+-------------- GENERIQUE --------------------*/
+
+/*//////////////////////\\\\\\\\\\\\\\\\\\\\\\
+********** LAYOUT NODE.TPL OVERRIDE **********
+\\\\\\\\\\\\\\\\\\\\\\\//////////////////////*/
+/*//////////////// COLONNE 1 \\\\\\\\\\\\\\\\*/
+#colonne-1{
+    width: 200px;
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+#zone-1{width: 990px;margin: 0;padding: 0;}
+.col1_layout_200_590_200{}
+.col1_layout_330_all{}
+.col1_layout_18_56_25{}
+/*//////////////// COLONNE 2 \\\\\\\\\\\\\\\\*/
+#colonne-2, #middle-content-override{
+    width: 550px;
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+#zone-2{width: 990px;margin: 0;padding: 0;}
+.col2_layout_200_590_200{}
+.col2_layout_330_all{}
+.col2_layout_18_56_25{}
+/*//////////////// COLONNE 3 \\\\\\\\\\\\\\\\*/
+#colonne-3{
+    width: 200px;
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+#zone-3{width: 990px;margin: 0;padding: 0;}
+.col3_layout_200_590_200{}
+.col3_layout_330_all{}
+.col3_layout_18_56_25{}
 
 /* LAYOUT PAGE BASE 2 COLONNES*/
 #content-inner-base2col{

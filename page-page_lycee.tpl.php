@@ -14,7 +14,7 @@
 	 <!-- ______________________ COLONNE GAUCHE _______________________ -->
 
 			  <?php if ($left): ?>
-         <div id="left-content">
+         <div id="left-content" class="pageLycee">
            
             <?php print $left; ?>
           </div>
@@ -48,7 +48,7 @@
             </div> <!-- /#content-header -->
           <?php endif; ?>
 		  <!-- ______________________ CONTENU CENTRAL _______________________ -->
-          <div id="middle-content-base2col">
+          <div id="middle-content-base2col" class="pageLycee">
             <?php print $content; ?>
               <?php print $feed_icons; ?>
           </div> <!-- /#content-area -->
@@ -71,7 +71,7 @@
 		  <!-- ______________________ COLONNE DROITE _______________________ -->
         <?php if ($right): ?>
          <!--debut du contenu droit -->
-		<div id="right-content-base2col">
+		<div id="right-content-base2col" class="pageLycee">
 			
 				
             <?php print $right; ?>
