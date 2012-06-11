@@ -25,23 +25,41 @@
             <div class="content">
                 <?php   print $node->content['body']['#value'];/*déplacer le contenu dans la zone désirée*/ ?>
             </div>
-            
+         <!-- LES DERNIERS CONTENUS DE CHAQUE RUBRIQUE -->   
+             <?php
+              global $theme_path;
+              include ($theme_path.'/includes/inc_actu_last_sortie.php');
+              ?>
+           <?php
+              global $theme_path;
+              include ($theme_path.'/includes/inc_actu_last_projet.php');
+              ?>
+         
+         
              <?php
               global $theme_path;
               include ($theme_path.'/includes/inc_region_col_G1.php');
               ?>
-        </div>
+        </div> <br/>
         <!--______________ ZONE 2________________ -->
          <!-- <pre> <?php //print_r($node); ?> </pre>-->   <!-- listage des variables du $content -->
         <div id="zone-2" class="CHOIX_DU_LAYOUT">
 
-         
-             <?php
+         <!-- LES AUTRES CONTENUS DE CHAQUE RUBRIQUE -->
+            <?php
               global $theme_path;
-              include ($theme_path.'/includes/inc_actu_vue.php');
+              include ($theme_path.'/includes/inc_actu_other_sortie.php');
               ?>
-
-        </div>
+          <?php
+              global $theme_path;
+              include ($theme_path.'/includes/inc_actu_other_projets.php');
+              ?>
+          <?php
+              global $theme_path;
+              include ($theme_path.'/includes/inc_actu_other_innovations.php');
+              ?>
+         
+        </div> <br style="clear: both;" />
 
         <!--______________ ZONE 3 ________________ -->
         <div id="zone-3" class="CHOIX_DU_LAYOUT">

@@ -371,6 +371,42 @@ padding:10px 0;
 	 color: #E2017B;
 	 text-decoration: underline;
 	 }
+/*--------------------------------------
+**** PAGE ACTU REDESIGN - AFFICHE ******
+_________________________________________*/
+#last-sortie,#last-projets{width: 200px;float: left;}
+#last-sortie .views-field-nothing{color: #95127C;font-weight: bold;}
+#last-sortie img{border: 3px solid #95127C;}
+#last-sortie .views-field-teaser{}
+
+#other-sortie, #other-projets,#other-innovations{width: 180px;float: left;margin: 0 5px;padding: 0 2px;}
+#other-sortie{border: 3px solid #95127C;}
+#other-sortie a{color: #4e4d5e;font-size: 11px;padding: 0 5px;}
+#other-sortie a:hover{color: #95127C;}
+#other-sortie .view-footer a{background: #95127C;color: white;text-align: center;display: block;width: 100px;margin: 0 auto;}
+
+#last-projets .views-field-nothing{color: #E3007C;font-weight: bold;}
+#last-projets img{border: 3px solid #E3007C;}
+#last-projets .views-field-teaser{}
+
+#other-projets{border: 3px solid #E2017B;}
+#other-projets a{color: #4e4d5e;font-size: 11px;padding: 0 5px;}
+#other-projets a:hover{color: #E2017B;}
+#other-projets .view-footer a{background:#E2017B;color: white;text-align: center;display: block;width: 100px;margin: 0 auto;}
+
+#other-innovations{border: 3px solid #E34F31;}
+#other-innovations ul li {list-style: outside;}
+#other-innovations a{color: #4e4d5e;font-size: 11px;padding: 0 5px;}
+#other-innovations a:hover{color: #E34F31;}
+#other-innovations .view-footer a{background:#E34F31;color:white;text-align: center;display: block;width: 100px;margin: 2px auto;}
+#other-innovations .view-footer a:hover{color:#555;}
+/*RSS site PF*/
+#block-aggregator-feed-1{border: 2px solid #AEC81F;background: #CFD0D2;padding: 3px;margin: 9px auto;width: 600px;text-align: center;}
+#block-aggregator-feed-1 h3{color: #E2017B;}
+#block-aggregator-feed-1 a{color: #4e4d5e;}
+#block-aggregator-feed-1 a:hover{color: #11B0D5;}
+#block-aggregator-feed-1 ul{}
+#block-aggregator-feed-1 li{list-style: none;}
 /*PAGES ACTIVITE VIE DU LYCEE*/
 .item-list-activites{
     margin: 0;

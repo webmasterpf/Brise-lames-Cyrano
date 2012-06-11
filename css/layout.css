@@ -364,6 +364,8 @@ text-decoration: none;
 #actualite-association h3.block-title{
     color: #E3001B;
 }
+/*REDESIGN*/
+#region_footer_actu{width: 990px;display: block;}
 /*LAYOUT SORTIE ACTIONS*/
 #left-content-sortie-actions{
 	float:left;
