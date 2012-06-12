@@ -10,7 +10,6 @@ function phptemplate_preprocess(&$vars, $hook)
         $vars['template_files'][]  = 'page-' . $vars['node']->type;
       }
       break;
-
   }
 }
 ?>

@@ -71,5 +71,4 @@
 	 </div> <!-- /contentPage -->
 	  
 	  <?php include "inc_footer.php";?>
-         <?php endif; ?>
-     
+         <?php endif; ?>    

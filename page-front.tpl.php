@@ -71,3 +71,4 @@
 	
 	 </div> <!-- /mainPage -->
      <?php include "inc_footer.php";?>
+<?php endif; ?>

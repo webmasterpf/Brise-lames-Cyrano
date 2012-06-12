@@ -374,16 +374,17 @@ padding:10px 0;
 /*--------------------------------------
 **** PAGE ACTU REDESIGN - AFFICHE ******
 _________________________________________*/
-#last-sortie,#last-projets{width: 200px;float: left;}
+#last-sortie,#last-projets,#last-innovation,#last-rp,#last-annonce{width: 198px;float: left;}
 #last-sortie .views-field-nothing{color: #95127C;font-weight: bold;}
 #last-sortie img{border: 3px solid #95127C;}
 #last-sortie .views-field-teaser{}
 
-#other-sortie, #other-projets,#other-innovations{width: 180px;float: left;margin: 0 5px;padding: 0 2px;}
+#other-sortie, #other-projets,#other-innovations,#other-rp,#other-annonce{width: 180px;float: left;margin: 0 4px;padding: 0 2px;}
 #other-sortie{border: 3px solid #95127C;}
 #other-sortie a{color: #4e4d5e;font-size: 11px;padding: 0 5px;}
 #other-sortie a:hover{color: #95127C;}
 #other-sortie .view-footer a{background: #95127C;color: white;text-align: center;display: block;width: 100px;margin: 0 auto;}
+#other-sortie .view-footer a:hover{text-decoration: underline;}
 
 #last-projets .views-field-nothing{color: #E3007C;font-weight: bold;}
 #last-projets img{border: 3px solid #E3007C;}
@@ -393,13 +394,40 @@ _________________________________________*/
 #other-projets a{color: #4e4d5e;font-size: 11px;padding: 0 5px;}
 #other-projets a:hover{color: #E2017B;}
 #other-projets .view-footer a{background:#E2017B;color: white;text-align: center;display: block;width: 100px;margin: 0 auto;}
+#other-projets .view-footer a:hover{text-decoration: underline;}
+
+#last-innovation .views-field-nothing{color: #E85231;font-weight: bold;}
+#last-innovation img{border: 3px solid #E85231;}
+#last-innovation .views-field-teaser{}
 
 #other-innovations{border: 3px solid #E34F31;}
 #other-innovations ul li {list-style: outside;}
 #other-innovations a{color: #4e4d5e;font-size: 11px;padding: 0 5px;}
 #other-innovations a:hover{color: #E34F31;}
 #other-innovations .view-footer a{background:#E34F31;color:white;text-align: center;display: block;width: 100px;margin: 2px auto;}
-#other-innovations .view-footer a:hover{color:#555;}
+#other-innovations .view-footer a:hover{text-decoration: underline;}
+
+#last-rp .views-field-nothing{color: #ACC624;font-weight: bold;}
+#last-rp img{border: 3px solid #ACC624;}
+#last-rp .views-field-teaser{}
+
+#other-rp{border: 3px solid #ACC624;}
+#other-rp ul li {list-style: outside;}
+#other-rp a{color: #4e4d5e;font-size: 11px;padding: 0 5px;}
+#other-rp a:hover{color: #ACC624;}
+#other-rp .view-footer a{background:#ACC624;color:white;text-align: center;display: block;width: 100px;margin: 2px auto;}
+#other-rp .view-footer a:hover{text-decoration: underline;}
+
+#last-annonce .views-field-nothing{color: #11B0D5;font-weight: bold;}
+#last-annonce img{border: 3px solid #11B0D5;}
+#last-annonce .views-field-teaser{}
+
+#other-annonce{border: 3px solid #11B0D5;}
+#other-annonce ul li {list-style: outside;}
+#other-annonce a{color: #4e4d5e;font-size: 11px;padding: 0 5px;}
+#other-annonce a:hover{color: #ACC624;}
+#other-annonce .view-footer a{background:#11B0D5;color:white;text-align: center;display: block;width: 100px;margin: 2px auto;}
+#other-annonce .view-footer a:hover{text-decoration: underline;}
 /*RSS site PF*/
 #block-aggregator-feed-1{border: 2px solid #AEC81F;background: #CFD0D2;padding: 3px;margin: 9px auto;width: 600px;text-align: center;}
 #block-aggregator-feed-1 h3{color: #E2017B;}
@@ -493,3 +521,9 @@ Liste filtree argument*/
     margin: 0;
     padding: 0;
 }
+/*_________________________________
+****  VERSION PDF PRINT ****
+----------------------------------*/
+#block-print-0{width: 500px; margin: 0 auto;}
+#block-print-0 a{text-decoration: none;color: #E2017B;}
+#block-print-0 a:hover{}

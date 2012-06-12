@@ -3,8 +3,9 @@
  * des champs CCK custom, si nécessaires pour une page de base.
 */?>
 <!--______________NODE TPL POUR PAGE.TPL CUSTOM : ACTU REDESIGN 2012________________ -->
+<?php init_theme(); //initialisation variable?>
 <div class="node <?php print $classes; ?>" id="node-<?php print $node->nid; ?>">
-    <div class="node-inner">
+<div class="node-inner">
         <!--______________ ZONE 1________________ -->
         <?php /* choix du layout selon nombre de colonne
          * .col1_layout_200_590_200{} .col1_layout_330_all{} .col1_layout_18_56_25{}
@@ -34,13 +35,24 @@
               global $theme_path;
               include ($theme_path.'/includes/inc_actu_last_projet.php');
               ?>
-         
+           <?php
+              global $theme_path;
+              include ($theme_path.'/includes/inc_actu_last_innovation.php');
+              ?>
+           <?php
+              global $theme_path;
+              include ($theme_path.'/includes/inc_actu_last_rp.php');
+              ?>
+         <?php
+              global $theme_path;
+              include ($theme_path.'/includes/inc_actu_last_annonce.php');
+              ?>
          
              <?php
               global $theme_path;
               include ($theme_path.'/includes/inc_region_col_G1.php');
               ?>
-        </div> <br/>
+        </div> <br style="clear: both;" />
         <!--______________ ZONE 2________________ -->
          <!-- <pre> <?php //print_r($node); ?> </pre>-->   <!-- listage des variables du $content -->
         <div id="zone-2" class="CHOIX_DU_LAYOUT">
@@ -57,6 +69,15 @@
           <?php
               global $theme_path;
               include ($theme_path.'/includes/inc_actu_other_innovations.php');
+              ?>
+         
+           <?php
+              global $theme_path;
+              include ($theme_path.'/includes/inc_actu_other_RP.php');
+              ?>
+           <?php
+              global $theme_path;
+              include ($theme_path.'/includes/inc_actu_other_annonce.php');
               ?>
          
         </div> <br style="clear: both;" />

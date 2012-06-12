@@ -1,5 +1,6 @@
+<?php init_theme(); //initialisation variable?>
 <div class="node <?php print $classes; ?>" id="node-<?php print $node->nid; ?>">
-  <div class="node-inner">
+   <div class="node-inner">
 <!--____________LAYOUT NODE page_monde_pro____________________________ -->
 <?php
 //print "<pre>";

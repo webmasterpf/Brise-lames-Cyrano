@@ -3,8 +3,9 @@
  * des champs CCK custom, si nécessaires pour une page de base.
 */?>
 <!--______________NODE TPL POUR PAGE.TPL CUSTOM________________ -->
-<div class="node <?php print $classes; ?>" id="node-<?php print $node->nid; ?>">
-    <div class="node-inner">
+<?php init_theme(); //initialisation variable?>
+<?php init_theme(); //initialisation variable?> <div class="node <?php print $classes; ?>" id="node-<?php print $node->nid; ?>">
+    <?php init_theme(); //initialisation variable?> <div class="node-inner">
         <!--______________COLONNE 1________________ -->
         <?php /* choix du layout selon nombre de colonne
          * .col1_layout_200_590_200{} .col1_layout_330_all{} .col1_layout_18_56_25{}
