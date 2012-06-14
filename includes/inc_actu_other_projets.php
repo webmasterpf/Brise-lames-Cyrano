@@ -27,6 +27,8 @@ $args_ag5 = $view->set_arguments(array(5));
 
 $emptyTextVue = $view->set_display('block_5')->display_options['empty'];
 $emptyText = $view->display_handler->set_option('empty','<div class="ma-classe">Pas de contenu à afficher.</div>');
+$footer_text = '<a href="/node/9" >Voir les archives</a>';
+$view->display_handler->set_option('footer',$footer_text);
 
 //Exécution de le vue
 $view->pre_execute();
