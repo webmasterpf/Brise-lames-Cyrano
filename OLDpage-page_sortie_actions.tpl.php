@@ -1,67 +1,36 @@
 <?php include "inc_header.php"; ?>
- <!-- ______________________ LAYOUT page_affiche_mois _______________________ -->
+ <!-- ______________________ LAYOUT PAGE ACTIONS SORTIES _______________________ -->
   <!-- ______________________ CONTENU _______________________ -->
   
-      <div id="contentPageActu">
+      <div id="contentPage">
       
           <!-- ______________________ CONTENT TOP _______________________ -->
       <?php if ($breadcrumb ||$content_top ): ?>
             <div id="content-top">
 	<span id="ariane"> <?php print $breadcrumb; ?></span>
-        <br clear="all"/>
-         <?php if ($title): ?>
-                <h1 class="title"><?php print $title; ?></h1>
-              <?php endif; ?>
-                
+
               <?php print $content_top; ?>
             </div> <!-- /#content-top -->
 	  
       
        <!-- ______________________ COLONNE GAUCHE _______________________ -->
-		
-	 <?php if ($sortie_action): ?>
-             <div id="left-content-actualites">
-         <?php print $sortie_action; ?>
-            </div>
-             <?php endif; ?> <!-- /colonne gauche revue de presse -->
-		
+	 <div id="left-content-sortie-actions">
+              <?php if ($title): ?>
+                <h1 class="title"><?php print $title; ?></h1>
+              <?php endif; ?>
+	<?php if ($left): ?>
+            <?php print $left; ?>
+        <?php endif; ?> <!-- /sidebar-left -->
+		   </div>
 		<!--fin du contenu gauche -->
         
-        <div id="content-inner-actualites" class="inner column center">
+        <div id="content-inner" class="inner column center">
 		             
 		
            
 
-       
-    <!-- ______________________ CONTENU CENTRAL _______________________ -->
-               <!--zone pour revue de presse -->
-                <?php if ($revue_presse): ?>
-              <div id="actualite-revue-presse">
-                    <?php print $revue_presse; ?>
-              </div><!-- /#actualite-revue-presse -->
-                     <?php endif; ?>
-
-    <!-- zone pour RSS du site PF-->
-            <?php if ($actuAssociation): ?>
-              <div id="actualite-association">
-                    <?php print $actuAssociation; ?>
-              </div><!-- /#actualite-association -->
-                     <?php endif; ?>
-
-              <!--zone pour actu intervenants -->
-                <?php if ($intervenants): ?>
-              <div id="actualite-intervenants">
-                    <?php print $intervenants; ?>
-              </div><!-- /#actualite-association -->
-                     <?php endif; ?>
-
-              <!--zone editable pour innovations -->
-                  <div id="middle-content-actualites">
-          
-                   
-              <br clear="all"/>
-                 <?php if ($mission || $messages || $help || $tabs): ?>
-            <div id="content-header">
+          <?php if ($mission || $messages || $help || $tabs): ?>
+            <div id="content-header">              
 
               <?php if ($mission): ?>
                 <div id="mission"><?php print $mission; ?></div>
@@ -69,7 +38,7 @@
 
               <?php print $messages; ?>
 
-              <?php print $help; ?>
+              <?php print $help; ?> 
 
               <?php if ($tabs): ?>
                 <div class="tabs"><?php print $tabs; ?></div>
@@ -77,18 +46,20 @@
 
             </div> <!-- /#content-header -->
           <?php endif; ?>
-            <?php print $content; ?>
-              <?php print $feed_icons; ?>
+		  <!-- ______________________ CONTENU CENTRAL _______________________ -->
+          <div id="middle-content-sortie-actions">
               
-        
-
+           <?php print $content; ?>
+          
+              <?php print $feed_icons; ?>
           </div> <!-- /#content-area -->
 
         
+
           
           
       </div> <!-- /content-inner /content -->
- 
+
             
         <?php if (!empty($primary_links) or !empty($secondary_links)): ?>
           <div id="navigation" class="menu <?php if (!empty($primary_links)) { print "with-main-menu"; } if (!empty($secondary_links)) { print " with-sub-menu"; } ?>">
@@ -99,22 +70,22 @@
 
        
 		  <!-- ______________________ COLONNE DROITE _______________________ -->
-        <?php if ($projets): ?>
-         <!--debut du contenu droit -->
-		<div id="right-content-actualites">
-		<?php print $projets; ?>
+        <?php if ($right): ?>
+         <!--d�but du contenu droit -->
+		<div id="right-content-sortie-actions">
+				
+            <?php print $right; ?>
         </div>
-        <?php endif; ?> <!-- /fin colonne de droite -->
+        <?php endif; ?> <!-- /sidebar-right -->
 
    
     	 <br clear="all"/>
          <!-- ______________________ CONTENU BAS _______________________ -->
-          <?php if ($content_bottom): ?>
+<?php if ($content_bottom): ?>
             <div id="content-bottom">
               <?php print $content_bottom; ?>
             </div><!-- /#content-bottom -->
           <?php endif; ?>
-            
 	 </div> <!-- /contentPage -->
 	  
 	  <?php include "inc_footer.php";?>

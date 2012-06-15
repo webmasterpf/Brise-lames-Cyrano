@@ -1,5 +1,5 @@
 <?php include "inc_header.php"; ?>
- <!-- ______________________ LAYOUT PAGE SORTIE OVERRIDE PAR NODE.TPL CUSTOM _______________________ -->
+ <!-- ______________________ LAYOUT PAGE MODELE OVERRIDE PAR NODE.TPL CUSTOM _______________________ -->
   <!-- ______________________ CONTENU _______________________ -->
 
       <div id="contentPage">
@@ -23,7 +23,7 @@
        <!-- ______________________ CONTENT INNER GLOBAL _______________________ -->
 
 
-        <div id="content-inner-page-sortie">
+        <div id="content-inner-page-MODELE">
 
           <?php if ($mission || $messages || $help || $tabs): ?>
             <div id="content-header">
@@ -43,7 +43,7 @@
             </div> <!-- /#content-header -->
           <?php endif; ?>
 		  <!-- ______________________ CONTENU CENTRAL _______________________ -->
-          <div id="middle-content-page-sortie">
+          <div id="middle-content-page-MODELE">
 
             <?php print $content; ?>
               <?php print $feed_icons; ?>

@@ -95,6 +95,14 @@ p{
     color: white;
     background: #11B0D5;
    }
+/*_________________________________
+ ****  NDE.TPL CUSTOM SORTIE ****
+----------------------------------*/
+#docs-joints-vdl{width: 210px;margin: 20px auto;padding: 10px;background: #CFD0D2;display: block;}
+#docs-joints-vdl h3{text-align: center;color: #E3007C;}
+#fiche-action-vdl a,#fichier-joint-vdl a{color: #11B0D5;padding: 2px;text-decoration: none;text-indent: 3px;}
+#fiche-action-vdl a:hover,#fichier-joint-vdl a:hover{background:#11B0D5;color:white;}
+#video-embed-vdl{margin: 0 auto;padding: 2px;width: 425px;border: 2px solid #11B0D5;}
 /*TABLES STYLES DIVERS*/
 .table_generik{
     border: 0px solid black;

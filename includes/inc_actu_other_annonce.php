@@ -30,8 +30,13 @@ $emptyTextVue = $view->set_display('block_5')->display_options['empty'];
 $emptyText = $view->display_handler->set_option('empty','<div class="ma-classe">Pas de contenu à afficher.</div>');
 $footer_text = '<a href="/node/8" >Voir les archives</a>';
 $view->display_handler->set_option('footer',$footer_text);
+//On écrase le filtre sur et affichage (permet d'éviter de checker l'état du workflow)
+$filter = $view->get_item($display_id, 'filter', 'status');
+$filter['value']=array('value' => '1',);
+$view->set_item($viewdisplay_ag5, 'filter', 'status', $filter);
 
-//Exécution de le vue
+//$view->set_item($viewdisplay_ag5, 'filter', 'type', array('annonce_accueil' => 'annonce_accueil','page_innovations' => 'page_innovations','page_intervenants' => 'page_intervenants','page_projets' => 'page_projets','page_presse' => 'page_presse','page_sortie_actions' => 'page_sortie_actions'));
+////Exécution de le vue
 $view->pre_execute();
 $view->execute();
 

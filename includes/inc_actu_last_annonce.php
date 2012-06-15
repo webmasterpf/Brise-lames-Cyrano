@@ -27,7 +27,7 @@ $viewdisplay_ag1 = $view->set_display('block_1');
 $args_ag1 = $view->set_arguments(array(13));
 
 $emptyTextVue = $view->set_display('block_1')->display_options['empty'];
-$emptyText = $view->display_handler->set_option('empty','<div class="ma-classe">Nous ne proposons pas de formation de ce type pour le moment.</div>');
+$emptyText = $view->display_handler->set_option('empty','<div class="ma-classe">Pas de contenu à afficher.</div>');
 
 //Exécution de le vue
 $view->pre_execute();
@@ -44,7 +44,7 @@ print $output;
 elseif (empty($view->result)) {
     //Formatage du texte vide,ajout du titre de la vue
      $outputEmpty = '<div id="last-annonce"><h3 class="CLASS_NAME">'.$view->get_title().'</h3>' .$emptyText.'<br>'.$emptyTextVue.'</div>';
-     drupal_set_message('$EmptyTextVue : '.$emptyTextVue,'status');
+     //drupal_set_message('$EmptyTextVue : '.$emptyTextVue,'status');
      //Affichage du texte vide
   print $outputEmpty;
 }

@@ -43,7 +43,7 @@ print $output;
 elseif (empty($view->result)) {
     //Formatage du texte vide,ajout du titre de la vue
      $outputEmpty = '<div id="last-projets"><h3 class="CLASS_NAME">'.$view->get_title().'</h3>' .$emptyText.'<br>'.$emptyTextVue.'</div>';
-     drupal_set_message('$EmptyTextVue : '.$emptyTextVue,'status');
+     //drupal_set_message('$EmptyTextVue : '.$emptyTextVue,'status');
      //Affichage du texte vide
   print $outputEmpty;
 }

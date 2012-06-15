@@ -214,26 +214,26 @@ h6 {
 \\\\\\\\\\\\\\\\\\\\\\\//////////////////////*/
 /*//////////////// COLONNE 1 \\\\\\\\\\\\\\\\*/
 #colonne-1{
-    width: 200px;
+    /*width: 200px;*/
     float: left;
-    margin: 0;
-    padding: 0;
+ 
 }
 #zone-1{width: 990px;margin: 0;padding: 0;}
 .col1_layout_200_590_200{}
 .col1_layout_330_all{}
 .col1_layout_18_56_25{}
+.col1_layout_225_700{width: 225px;padding: 5px;}
 /*//////////////// COLONNE 2 \\\\\\\\\\\\\\\\*/
 #colonne-2, #middle-content-override{
-    width: 550px;
     float: left;
-    margin: 0;
-    padding: 0;
+    
 }
 #zone-2{width: 990px;margin: 0;padding: 0;}
 .col2_layout_200_590_200{}
 .col2_layout_330_all{}
 .col2_layout_18_56_25{}
+.col2_layout_225_700{width: 700px;padding: 5px;}
+.border-left{border-left: 1px solid #E3007A;}
 /*//////////////// COLONNE 3 \\\\\\\\\\\\\\\\*/
 #colonne-3{
     width: 200px;
@@ -366,7 +366,15 @@ text-decoration: none;
 }
 /*REDESIGN*/
 #region_footer_actu{width: 990px;display: block;}
-/*LAYOUT SORTIE ACTIONS*/
+/*-----------------------
+*** LAYOUT SORTIE ACTIONS ***
+_____________________________*/
+#content-inner-page-sortie{}
+#middle-content-sortie-actions strong,#middle-content-page-sortie strong{
+     color: #E2017B;
+}
+#middle-content-page-sortie a{ color: #11B0D5;text-decoration: none; padding: 2px;text-indent: 3px;}
+/*Commun tpl pour vdl à retirer quand tous les nodes override seront ok*/
 #left-content-sortie-actions{
 	float:left;
 	position:relative;
@@ -402,9 +410,7 @@ background-color: white;
         border-left: 1px solid #E3007A;
         border-right: 1px solid #11B0D5;
  }
- #middle-content-sortie-actions strong{
-     color: #E2017B;
-}
+ /*-------------------------------------------------------*/
  #galerie-node{
      float: right;
      background: red;
