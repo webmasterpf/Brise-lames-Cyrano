@@ -12,26 +12,7 @@
               <?php print $content_top; ?>
             </div> <!-- /#content-top -->
 	  
-      
-       <!-- ______________________ COLONNE GAUCHE _______________________ -->
-		
-			  
-         <div id="left-content-fiche-formations">
-              <?php if ($title): ?>
-                <h1 class="title"><?php print $title; ?></h1>
-              <?php endif; ?>
-                <?php if ($left): ?>
-            <?php print $left; ?>
-                 <?php endif; ?>
-          </div>
-             <!-- /sidebar-left -->
-		
-		<!--fin du contenu gauche -->
-        
-        <div id="content-inner-fiche-formations" class="inner column center">
-		             
-		
-           
+
 
           <?php if ($mission || $messages || $help || $tabs): ?>
             <div id="content-header">              
@@ -51,18 +32,11 @@
             </div> <!-- /#content-header -->
           <?php endif; ?>
 		  <!-- ______________________ CONTENU CENTRAL _______________________ -->
-          <div id="middle-content-fiche-formations">
+          <div id="middle-content-ficheformations">
            <!-- <pre> <?php print_r($node); ?> </pre>-->   <!-- listage des variables du $content -->
             <?php print $content; ?>
               <?php print $feed_icons; ?>
           </div> <!-- /#content-area -->
-
-        
-
-          
-          
-      </div> <!-- /content-inner /content -->
-
             
         <?php if (!empty($primary_links) or !empty($secondary_links)): ?>
           <div id="navigation" class="menu <?php if (!empty($primary_links)) { print "with-main-menu"; } if (!empty($secondary_links)) { print " with-sub-menu"; } ?>">
@@ -71,19 +45,7 @@
           </div> <!-- /navigation -->
         <?php endif; ?>
 
-       
-		  <!-- ______________________ COLONNE DROITE _______________________ -->
-       
-         <!--d�but du contenu droit -->
-		<div id="right-content-fiche-formations">
-			
-		 <?php if ($right): ?>
-            <?php print $right; ?>
-                    <?php endif; ?>
-        </div>
-         <!-- /sidebar-right -->
-
-   
+      
     	 <br clear="all"/>
          <!-- ______________________ CONTENU BAS _______________________ -->
 <?php if ($content_bottom): ?>

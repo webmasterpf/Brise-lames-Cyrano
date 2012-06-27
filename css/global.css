@@ -96,7 +96,7 @@ p{
     background: #11B0D5;
    }
 /*_________________________________
- ****  NDE.TPL CUSTOM SORTIE ****
+ ****  NODE.TPL CUSTOM SORTIE ****
 ----------------------------------*/
 #docs-joints-vdl{width: 210px;margin: 20px auto;padding: 10px;background: #CFD0D2;display: block;}
 #docs-joints-vdl h3{text-align: center;color: #E3007C;}
@@ -327,44 +327,34 @@ padding:10px 0;
     color: #11B0D5;
     text-decoration: underline;
 }
+/*--------------------------------------
+**** FICHE FRMATION REDESIGN 2012 ******
+_________________________________________*/
+.fiche-formation p{padding: 3px;}
+.fiche-formation h3{color: #d63e2a;}
+.fiche-formation a{color: #02A7D5;}
+.fiche-formation strong{color: #02A7D5;}
+.fiche-formation h2{color: #93117E;}
+.fiche-formation{}
+.fiche-formation1 h3{color: #ACC624;}
+#poursuite-fiche{}
+#programme-fiche{color: #94127F;width: 175px;margin: 25px auto;}
+#programme-fiche a{color: #E2017B;font-weight: bold;}
+#complement-fiche{}
 /*STYLE PAGE ACTUALITE*/
-#left-content-actualites a{
-    text-decoration: none;
-   
-}
-#left-content-actualites a:hover{
-    text-decoration: underline;
-    color: #11B0D5;
-}
+#left-content-actualites a{text-decoration: none;}
+#left-content-actualites a:hover{text-decoration: underline;color: #11B0D5;}
 #middle-content-actualites a{
    /* color: #d63e2a;*/
     text-decoration: none;
     /*font-weight: bold;*/
 }
-#middle-content-actualites a:hover{
-    text-decoration: underline;
-}
-#actualite-association ul li{
-   list-style: square;
-}
-#actualite-association a{
-    text-decoration: underline;
-    color: black;
-    padding: 2px;
-}
-#actualite-association a:hover{
-    text-decoration: underline;
-    color: white;
-    background: #11B0D5;
-}
-#right-content-actualites a{
-    text-decoration: none;
-   
-}
-#right-content-actualites a:hover{
-     text-decoration: underline;
-    color: #11B0D5;
-}
+#middle-content-actualites a:hover{ text-decoration: underline;}
+#actualite-association ul li{list-style: square;}
+#actualite-association a{text-decoration: underline; color: black;padding: 2px;}
+#actualite-association a:hover{text-decoration: underline;color: white;background: #11B0D5;}
+#right-content-actualites a{text-decoration: none;}
+#right-content-actualites a:hover{text-decoration: underline;color: #11B0D5;}
 .view-liste-projets .views-row, .view-liste-sortie-action .views-row{
     border-bottom: 1px solid #11B0D5;
     margin:0 0 5px;

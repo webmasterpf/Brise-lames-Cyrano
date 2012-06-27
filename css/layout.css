@@ -506,6 +506,15 @@ background-color: white;
     padding: 0;
     margin: 0;
 }
+/*_____________________________
+---  REDESIGN FICHE FORMATION 2012
+----------------------------------*/
+#middle-content-ficheformation{
+      float:left;
+    position:relative;
+    width:auto;
+    padding:5px;
+}
 /*LAYOUT PAGE MONDE PRO*/
 #left-content-pageMondePro{
     width: 225px;

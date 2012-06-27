@@ -15,9 +15,7 @@
 	
        
     <!-- ______________________ CONTENU CENTRAL _______________________ -->
-              
-
-              <!--zone editable pour innovations -->
+            
                   <div id="middle-content-actualites">
           
                    
