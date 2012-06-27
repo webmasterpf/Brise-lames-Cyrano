@@ -63,9 +63,6 @@
           </div> <!-- /navigation -->
         <?php endif; ?>
 
-
-
-
     	 <br clear="all"/>
          <!-- ______________________ CONTENU BAS _______________________ -->
 <?php if ($content_bottom): ?>
