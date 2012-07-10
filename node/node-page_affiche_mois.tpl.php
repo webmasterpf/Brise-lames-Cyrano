@@ -28,28 +28,28 @@
             </div>
          <!-- LES DERNIERS CONTENUS DE CHAQUE RUBRIQUE -->   
              <?php
-              global $theme_path;
+              $theme_path = drupal_get_path('theme', 'cyrano_bl');
               include ($theme_path.'/includes/inc_actu_last_sortie.php');
               ?>
            <?php
-              global $theme_path;
+              $theme_path = drupal_get_path('theme', 'cyrano_bl');
               include ($theme_path.'/includes/inc_actu_last_projet.php');
               ?>
            <?php
-              global $theme_path;
+              $theme_path = drupal_get_path('theme', 'cyrano_bl');
               include ($theme_path.'/includes/inc_actu_last_innovation.php');
               ?>
            <?php
-              global $theme_path;
+              $theme_path = drupal_get_path('theme', 'cyrano_bl');
               include ($theme_path.'/includes/inc_actu_last_rp.php');
               ?>
          <?php
-              global $theme_path;
+              $theme_path = drupal_get_path('theme', 'cyrano_bl');
               include ($theme_path.'/includes/inc_actu_last_annonce.php');
               ?>
          
              <?php
-              global $theme_path;
+              $theme_path = drupal_get_path('theme', 'cyrano_bl');
               include ($theme_path.'/includes/inc_region_col_G1.php');
               ?>
         </div> <br style="clear: both;" />
@@ -59,24 +59,24 @@
 
          <!-- LES AUTRES CONTENUS DE CHAQUE RUBRIQUE -->
             <?php
-              global $theme_path;
+              $theme_path = drupal_get_path('theme', 'cyrano_bl');
               include ($theme_path.'/includes/inc_actu_other_sortie.php');
               ?>
           <?php
-              global $theme_path;
+              $theme_path = drupal_get_path('theme', 'cyrano_bl');
               include ($theme_path.'/includes/inc_actu_other_projets.php');
               ?>
           <?php
-              global $theme_path;
+              $theme_path = drupal_get_path('theme', 'cyrano_bl');
               include ($theme_path.'/includes/inc_actu_other_innovations.php');
               ?>
          
            <?php
-              global $theme_path;
+              $theme_path = drupal_get_path('theme', 'cyrano_bl');
               include ($theme_path.'/includes/inc_actu_other_RP.php');
               ?>
            <?php
-              global $theme_path;
+              $theme_path = drupal_get_path('theme', 'cyrano_bl');
               include ($theme_path.'/includes/inc_actu_other_annonce.php');
               ?>
          
@@ -91,7 +91,7 @@
             </div>
             <?php endif;?>
           <?php
-              global $theme_path;
+              $theme_path = drupal_get_path('theme', 'cyrano_bl');
               include ($theme_path.'/includes/inc_region_footer_actu.php');
               ?>
 

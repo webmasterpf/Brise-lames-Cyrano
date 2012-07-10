@@ -34,7 +34,7 @@
             <?php endif;?>
            
              <?php
-              global $theme_path;
+              $theme_path = drupal_get_path('theme', 'cyrano_bl');
               include ($theme_path.'/includes/inc_region_col_G1.php');
               ?>
         </div>
@@ -48,6 +48,12 @@
             <span class="submitted"><?php print $submitted; ?></span>
             <?php endif; ?>
 
+              <?php
+              $theme_path = drupal_get_path('theme', 'cyrano_bl');
+              include ($theme_path.'/includes/inc_vdl_GA.php');
+              ?>
+            
+            
             <div class="content">
                 <?php   print $node->content['body']['#value'];/*déplacer le contenu dans la colonne désirée*/ ?>
             </div>
@@ -58,7 +64,7 @@
             </div>
             <?php endif;?>
             
-            
+           
         </div>
 
         <?php if ($terms): ?>
@@ -71,3 +77,4 @@
 
     </div> <!-- /node-inner -->
 </div> <!-- /node-->
+<!-- <pre><?php print_r($node); ?></pre> -->

@@ -290,7 +290,7 @@ border-right: 1px solid #11B0D5;
     padding:25px 5px 5px;
 }
 .views-field-title a{
-    font-size: 14px;
+    font-size: inherit;
     font-weight: bold;
     color: #11B0D5;
 }

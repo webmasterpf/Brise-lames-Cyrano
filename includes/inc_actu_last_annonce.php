@@ -23,10 +23,10 @@
 
 $viewname_ag1 = 'Actu_globale';
 $view = views_get_view ($viewname_ag1);
-$viewdisplay_ag1 = $view->set_display('block_1');
+$viewdisplay_ag1 = $view->set_display('block_2');
 $args_ag1 = $view->set_arguments(array(13));
 
-$emptyTextVue = $view->set_display('block_1')->display_options['empty'];
+$emptyTextVue = $view->set_display('block_2')->display_options['empty'];
 $emptyText = $view->display_handler->set_option('empty','<div class="ma-classe">Pas de contenu à afficher.</div>');
 
 //Exécution de le vue

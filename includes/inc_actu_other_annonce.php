@@ -21,20 +21,10 @@
 
 $viewname_ag5 = 'Actu_globale';
 $view = views_get_view ($viewname_ag5);
-$viewdisplay_ag5 = $view->set_display('block_5');
+$viewdisplay_ag5 = $view->set_display('block_3');
 $args_ag5 = $view->set_arguments(array(13));
 
-//Modification du filtre sur la publication
-$filter1  = $view->get_item($viewdisplay_ag5, 'filter', 'status');
-$filter1['value']= array('value'=>'1');
-$view->set_item($viewdisplay_ag5, 'filter', 'status', $filter1);
-
-//Modification du filtre sur le processus
-$filter2 = $view->get_item($viewdisplay_ag5, 'filter', 'sid');
-$filter2['value']= array('value'=>'0');
-$view->set_item($viewdisplay_ag5, 'filter', 'sid', $filter2);
-
-$emptyTextVue = $view->set_display('block_5')->display_options['empty'];
+$emptyTextVue = $view->set_display('block_3')->display_options['empty'];
 $emptyText = $view->display_handler->set_option('empty','<div class="ma-classe">Pas de contenu à afficher.</div>');
 $footer_text = '<a href="/node/8" >Voir les archives</a>';
 $view->display_handler->set_option('footer',$footer_text);

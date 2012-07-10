@@ -42,7 +42,7 @@
         </div>
         <!--______________COLONNE 2________________ -->
          <!-- <pre> <?php //print_r($node); ?> </pre>-->   <!-- listage des variables du $content -->
-        <div id="colonne-2" class="col2_layout_225_700 fiche-formation">
+        <div id="colonne-2" class="col2_layout_225_700 fiche-formation bord-rose">
 
             <?php print $picture; ?>
 

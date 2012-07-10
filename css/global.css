@@ -49,6 +49,9 @@ gris clair #9C9E9F
 gris fonce #606171
 orange fonce logo #DE603A
 ∕∕------- FIN COULEURS ---------------*/
+
+/*_______ BORDURES _________*/
+.bord-rose{border-left: 1px solid #E2017B;}
 /**----HEADER---***/
 
 
@@ -305,6 +308,26 @@ padding:10px 0;
     border: 0;
     line-height: 0;
 }
+/*--------------------------------------
+**** POLE FORMATION REDESIGN 2012 ******
+_________________________________________*/
+.bloc-pole a{text-align: center;}
+.bloc-pole{width: 240px;float: left;margin: 0 3px;}
+.bloc-pole a{color: #11B0D5;text-decoration: none;line-height: 1.6em;padding: 1px;text-align: center;display: block;}
+.bloc-pole a:hover{background: #970F7D;color: whitesmoke;}
+.bloc-pole h3{text-align: center;margin:0 0 5px 0;}
+
+#vente table{width:235px;background: #EFEFEF;border:3px solid #F39300;padding: 3px;}
+#restauration table{width:235px;background:#EFEFEF;border:3px solid #ADC91F;padding: 3px;margin: 22px 0 0 0;}
+#gestion table{width:235px;background: #EFEFEF;border:3px solid #01AAD3;padding: 3px;}
+#postbac table{width:235px;background: #EFEFEF;border:3px solid #E1017B;padding: 3px;margin: 22px 0 0 0;}
+
+#vente h3{color: #F39300;}
+#gestion h3{color: #01AAD3;}
+#restauration h3{color: #ADC91F;}
+#postbac h3{color: #E1017B;}
+#vente tr,#gestion tr,#restauration tr,#postbac tr{margin: 2px 0;}
+#vente td,#gestion td,#restauration td,#postbac td{padding: 10px 5px;display: block;}
 /************************/
 /*STYLE FICHE FORMATION*/
 #middle-content-fiche-formations h2{
@@ -328,19 +351,20 @@ padding:10px 0;
     text-decoration: underline;
 }
 /*--------------------------------------
-**** FICHE FRMATION REDESIGN 2012 ******
+**** FICHE FORMATION REDESIGN 2012 ******
 _________________________________________*/
 .fiche-formation p{padding: 3px;}
 .fiche-formation h3{color: #d63e2a;}
 .fiche-formation a{color: #02A7D5;}
 .fiche-formation strong{color: #02A7D5;}
 .fiche-formation h2{color: #93117E;}
-.fiche-formation{}
+.fiche-formation h4{color: #E1017B;}
 .fiche-formation1 h3{color: #ACC624;}
-#poursuite-fiche{}
+#poursuite-fiche{margin: 25px 15px}
+#poursuite-fiche h2{font-size: 11px;color: #AEC81F;}
 #programme-fiche{color: #94127F;width: 175px;margin: 25px auto;}
 #programme-fiche a{color: #E2017B;font-weight: bold;}
-#complement-fiche{}
+#complement-fiche{color:  #93117E;font-style: italic;font-size: 13px;}
 /*STYLE PAGE ACTUALITE*/
 #left-content-actualites a{text-decoration: none;}
 #left-content-actualites a:hover{text-decoration: underline;color: #11B0D5;}
