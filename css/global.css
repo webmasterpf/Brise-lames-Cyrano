@@ -316,6 +316,7 @@ _________________________________________*/
 .bloc-pole a{color: #11B0D5;text-decoration: none;line-height: 1.6em;padding: 1px;text-align: center;display: block;}
 .bloc-pole a:hover{background: #970F7D;color: whitesmoke;}
 .bloc-pole h3{text-align: center;margin:0 0 5px 0;}
+.bloc-pole .complement{text-align: center;font-style: italic;color: #7A7B85;display: block;}
 
 #vente table{width:235px;background: #EFEFEF;border:3px solid #F39300;padding: 3px;}
 #restauration table{width:235px;background:#EFEFEF;border:3px solid #ADC91F;padding: 3px;margin: 22px 0 0 0;}
@@ -328,6 +329,7 @@ _________________________________________*/
 #postbac h3{color: #E1017B;}
 #vente tr,#gestion tr,#restauration tr,#postbac tr{margin: 2px 0;}
 #vente td,#gestion td,#restauration td,#postbac td{padding: 10px 5px;display: block;}
+
 /************************/
 /*STYLE FICHE FORMATION*/
 #middle-content-fiche-formations h2{
@@ -362,7 +364,7 @@ _________________________________________*/
 .fiche-formation1 h3{color: #ACC624;}
 #poursuite-fiche{margin: 25px 15px}
 #poursuite-fiche h2{font-size: 11px;color: #AEC81F;}
-#programme-fiche{color: #94127F;width: 175px;margin: 25px auto;}
+#programme-fiche{color: #94127F;width: 175px;margin: 25px auto;padding: 5px;border: 2px solid;}
 #programme-fiche a{color: #E2017B;font-weight: bold;}
 #complement-fiche{color:  #93117E;font-style: italic;font-size: 13px;}
 /*STYLE PAGE ACTUALITE*/

@@ -23,7 +23,7 @@ $viewdisplay_fl3 = $view->set_display('block_1');
 $args_fl3 = $view->set_arguments(array(17));
 
 $emptyTextVue = $view->set_display('block_1')->display_options['empty'];
-$emptyText = $view->display_handler->set_option('empty','<div class="ma-classe">Nous ne proposons pas de formation de ce type pour le moment.</div>');
+$emptyText = $view->display_handler->set_option('empty','<div class="texte-vide">Nous ne proposons pas de formation de ce type pour le moment.</div>');
 //$footer_text = '<a href="/node/8" >Voir les archives</a>';
 //$view->display_handler->set_option('footer',$footer_text);
 
