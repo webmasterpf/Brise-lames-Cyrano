@@ -1,0 +1,114 @@
+/* $Id: views_showcase.css,v 1.1 2010/04/29 16:40:36 khaledzaidan Exp $ */ 
+.views-showcase {
+  background-color: #000;
+  width: 520px;
+  height: 225px;
+  padding: 10px !important;
+}
+
+.views-showcase div.views-showcase-big-panel {
+  list-style-image: none;
+  margin:0;
+  padding:0;
+  height: 225px;
+}
+
+.views-showcase .views-showcase-big-panel li, .views-showcase .views-showcase-big-panel div {
+  list-style-image: none;
+  /*margin:0;*/
+  padding:0;
+  background: none;
+}
+
+.views-showcase-mini-list {
+  width: 180px;
+  overflow: hidden;
+  height: 200px;
+  background-color: #000;
+}
+
+.views-showcase-big-panel {
+  width: 340px;
+  height: 220px;
+}
+
+.views-showcase-pager-item {
+  background-color: #000;
+  opacity: 0.7;
+  filter: alpha(opacity=70);
+  padding: 0 5px;
+  border-bottom: 1px dashed #FFF;
+}
+
+.views-showcase-mini-list .activeItem, .views-showcase-pager-item:hover {
+  background-color: #666;
+  color: #333;
+  opacity: 0.7;
+  filter: alpha(opacity=70);
+}
+
+.views-showcase-field-label, .views-showcase-field-content {
+  display: inline;
+}
+
+ul.views-showcase-pager-item-sublist, ul.views-showcase-mini-list {
+  list-style: none;
+}
+
+.views-showcase-mini-list li.views-showcase-pager-item , .views-showcase-mini-list li.views-showcase-pager-subitem {
+  background-image: none;
+  padding: 0px;
+}
+
+.views-showcase-subitem label, .views-showcase-content-title, .views-showcase-naviation-title {
+  display:none;
+}
+
+/*'right' skin*/
+
+.skin-right .views-showcase-navigation-container {
+  float: right;
+}
+
+.skin-right .views-showcase-content-container {
+  float: left;
+}
+
+/*'left' skin*/
+
+.skin-left .views-showcase-navigation-container {
+  float: left;
+}
+
+.skin-left .views-showcase-content-container {
+  float: right;
+}
+
+/* Skin génral  override*/
+.views-showcase{background-color:#fff;width:974px;height:326px;padding:0 !important;}
+.views-showcase div.views-showcase-big-panel{list-style-image:none;margin:0;padding:0;height:225px;}
+.views-showcase .views-showcase-big-panel li,.views-showcase .views-showcase-big-panel div{list-style-image:none;padding:0;background:none;}
+.views-showcase-mini-list{width:360px;overflow:hidden;height:324px;background-color:#999;}
+.views-showcase-big-panel{width:622px;height:325px;background:#fff;}
+.views-showcase-pager-item{background-color:#888;padding:0 5px;border-bottom:1px solid #FFF;margin-bottom:0;height:80px;}
+.views-showcase-mini-list .activeItem,.views-showcase-pager-item:hover{background-color:#555;}
+.views-showcase-field-label,.views-showcase-field-content{display:inline;}
+ul.views-showcase-pager-item-sublist,ul.views-showcase-mini-list{padding-bottom:0;}
+.views-showcase-mini-list li.views-showcase-pager-item,.views-showcase-mini-list li.views-showcase-pager-subitem{background-image:none;padding:0;}
+.views-showcase-subitem label,.views-showcase-content-title,.views-showcase-naviation-title{display:none;}
+/*Override du style right*/
+.skin-right .views-showcase-navigation-container{float:right;}
+.skin-right .views-showcase-content-container{float:left;width:450px;}
+/*CSS Style des champs custom*/
+.views-showcase-navigation-box-field_series_name_value{position:relative;bottom:69px;left:135px;font-size:18px;text-transform:uppercase;color:#fff;font-weight:700;}
+.views-showcase-navigation-box-field_issue_number_value,views-showcase-navigation-box-field_text2_value{position:relative;bottom:65px;left:135px;color:#fff;font-size:14px;font-weight:100;}
+.views-showcase-navigation-box-value{position:relative;bottom:60px;left:135px;}
+.views-showcase-pager-item-sublist{height:80px;}
+.views-showcase-big-box-field_text1_value{position:relative;bottom:70px;left:20px;font-size:26px;font-variant:small-caps;color:#f1f1f1;font-weight:700;width:400px;}
+.views-showcase-big-box-field_text2_value{position:relative;bottom:60px;left:25px;color:#fff;width:400px;}
+.views-row-first views-showcase-pager-item{height:80px;}
+span.views-field-field-series-name-value{color:#333;font-weight:700;font-size:12px;float:left;width:340px;margin-top:10px;}
+div.views-field-field-series-name-value{color:#333;font-weight:700;font-size:12px;letter-spacing:1px;}
+span.views-field-field-issue-title-value{color:#555;font-size:11px;float:left;padding-top:5px;margin-right:7px;min-width:280px;}
+div.views-field-field-issue-title-value{color:#555;font-size:11px;letter-spacing:1px;}
+.views-field-field-issue-number-value{color:#555;font-size:11px;float:left;width:170px;margin-bottom:0;letter-spacing:1px;}

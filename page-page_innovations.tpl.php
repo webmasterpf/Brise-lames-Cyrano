@@ -3,32 +3,24 @@
   <!-- ______________________ CONTENU _______________________ -->
   
       <div id="contentPage">
-      
+   
           <!-- ______________________ CONTENT TOP _______________________ -->
-      <?php if ($breadcrumb ||$content_top ): ?>
+      <?php if ($breadcrumb ||$content_top): ?>
             <div id="content-top">
 	<span id="ariane"> <?php print $breadcrumb; ?></span>
 
               <?php print $content_top; ?>
             </div> <!-- /#content-top -->
-	  
-      
-       <!-- ______________________ COLONNE GAUCHE _______________________ -->
-	 <div id="left-content-sortie-actions">
-              <?php if ($title): ?>
-                <h1 class="title"><?php print $title; ?></h1>
-              <?php endif; ?>
-	<?php if ($left): ?>
-            <?php print $left; ?>
-        <?php endif; ?> <!-- /sidebar-left -->
-		   </div>
-		<!--fin du contenu gauche -->
-        
-        <div id="content-inner" class="inner column center">
-		             
-		
-           
+            <?php endif; ?>
 
+  <!-- ______________________ CONTENT TOP NODE_______________________ -->
+               <?php if ($content_top_node): ?>
+            <div id="content-top-node">
+	              <?php print $content_top_node; ?>
+            </div> <!-- /#content-top-node -->
+            <?php endif; ?>
+		<!-- ______________________ CONTENT INNER GLOBAL _______________________ -->
+    <div id="content-inner-page-sortie">
           <?php if ($mission || $messages || $help || $tabs): ?>
             <div id="content-header">              
 
@@ -47,7 +39,7 @@
             </div> <!-- /#content-header -->
           <?php endif; ?>
 		  <!-- ______________________ CONTENU CENTRAL _______________________ -->
-          <div id="middle-content-sortie-actions">
+          <div id="middle-content-page-sortie">
               
            <?php print $content; ?>
           
@@ -67,18 +59,6 @@
             <?php if (!empty($secondary_links)){ print theme('links', $secondary_links, array('id' => 'secondary', 'class' => 'links sub-menu')); } ?>
           </div> <!-- /navigation -->
         <?php endif; ?>
-
-       
-		  <!-- ______________________ COLONNE DROITE _______________________ -->
-        <?php if ($right): ?>
-         <!--d�but du contenu droit -->
-		<div id="right-content-sortie-actions">
-	
-				
-            <?php print $right; ?>
-        </div>
-        <?php endif; ?> <!-- /sidebar-right -->
-
    
     	 <br clear="all"/>
          <!-- ______________________ CONTENU BAS _______________________ -->
@@ -88,7 +68,5 @@
             </div><!-- /#content-bottom -->
           <?php endif; ?>
 	 </div> <!-- /contentPage -->
-	  
-	  <?php include "inc_footer.php";?>
-         <?php endif; ?>
+<?php include "inc_footer.php";?>
      

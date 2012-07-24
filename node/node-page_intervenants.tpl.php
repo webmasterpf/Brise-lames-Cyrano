@@ -2,7 +2,7 @@
 /* Ce template permet la création d'un layout multicolonne pour les pages de base, en permettant la disposition facile
  * des champs CCK custom, si nécessaires pour une page de base.
 */?>
-<!--______________NODE TPL POUR PAGE.TPL SORTIE ________________ -->
+<!--______________NODE TPL POUR PAGE.TPL INTERVENANTS ________________ -->
 <div class="node <?php print $classes; ?>" id="node-<?php print $node->nid; ?>">
  <div class="node-inner">
         <!--______________COLONNE 1________________ -->
@@ -17,24 +17,24 @@
             <h1 class="titre_page"><?php print $title; ?></h1>
             <?php endif; ?>
             
-             <?php if ($node->field_fiche_action_sortie[0]['view'] OR 
-                      $node->field_fichier_joint[0]['view']): ?>
+             <?php if ($node->field_fiche_action_intervenants[0]['view'] OR 
+                      $node->field_fichier_joint_intervenant[0]['view']): ?>
             <div id="docs-joints-vdl">
                 <h3>Utile</h3>
                 
             <div id="fiche-action-vdl">
-                    <?php  print $node->field_fiche_action_sortie[0]['view']  ?>
+                    <?php  print $node->field_fiche_action_intervenants[0]['view']  ?>
             </div>
              
                 
             <div id="fichier-joint-vdl">
-                    <?php  print $node->field_fichier_joint[0]['view']  ?>
+                    <?php  print $node->field_fichier_joint_intervenant[0]['view']  ?>
             </div>
                  </div>
             <?php endif;?>
            
              <?php
-              $theme_path = drupal_get_path('theme', 'cyrano_bl');
+              global $theme_path;
               include ($theme_path.'/includes/inc_region_col_G1.php');
               ?>
         </div>
@@ -48,17 +48,11 @@
             <span class="submitted"><?php print $submitted; ?></span>
             <?php endif; ?>
 
-              <?php
-              //$theme_path = drupal_get_path('theme', 'cyrano_bl');
-              //include ($theme_path.'/includes/inc_vdl_GA.php');
-              ?>
-            
-            
             <div class="content">
                 <?php   print $node->content['body']['#value'];/*déplacer le contenu dans la colonne désirée*/ ?>
             </div>
 
-                    <?php if ($node->field_choix_galerie_vdl[0]['view']): ?>
+                  <?php if ($node->field_choix_galerie_vdl[0]['view']): ?>
             <div id="galerie-vdl">
                     <?php  print $node->field_choix_galerie_vdl[0]['view']  ?>
             </div>
@@ -77,7 +71,7 @@
             </div>
             <?php endif;?>
             
-           
+            
         </div>
 
         <?php if ($terms): ?>
@@ -90,4 +84,3 @@
 
     </div> <!-- /node-inner -->
 </div> <!-- /node-->
-<!-- <pre><?php print_r($node); ?></pre> -->

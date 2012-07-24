@@ -52,9 +52,22 @@
                 <?php   print $node->content['body']['#value'];/*déplacer le contenu dans la colonne désirée*/ ?>
             </div>
 
-               <?php if ($node->field_video_externe[0]['view']): ?>
+                  <?php if ($node->field_choix_galerie_vdl[0]['view']): ?>
+            <div id="galerie-vdl">
+                    <?php  print $node->field_choix_galerie_vdl[0]['view']  ?>
+            </div>
+            <?php endif;?>
+       
+
+        <?php if ($node->field_video_externe[0]['view']): ?>
             <div id="video-embed-vdl">
                     <?php  print $node->field_video_externe[0]['view']  ?>
+            </div>
+            <?php endif;?>
+
+        <?php if ($node->field_video[0]['view']): ?>
+            <div id="video-embed-vdl">
+                    <?php  print $node->field_video[0]['view']  ?>
             </div>
             <?php endif;?>
             
