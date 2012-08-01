@@ -555,3 +555,23 @@ Liste filtree argument*/
 #block-print-0{width: 500px; margin: 0 auto;}
 #block-print-0 a{text-decoration: none;color: #E2017B;}
 #block-print-0 a:hover{}
+/*********************************
+----------------------------------
+---- RESEAUX SOCIAUX Service links
+---------------------------------*/
+.service-links, #content-bottom-home .service-links{
+    background: none repeat scroll 0 0 #EFEFEF;
+    display: block;
+    margin: 0 auto;
+    padding: 2px;
+    text-align: center;
+    width: 850px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+   behavior: url(/sites/all/libraries/PIE/PIE.htc);
+   position: relative;
+}
+.service-links a{margin: 0 5px;color: #F29400;}
+.service-links a:hover{text-decoration: none;}
+.service-links{}

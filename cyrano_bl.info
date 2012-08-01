@@ -25,6 +25,8 @@ regions[DiapoHP] = Diaporama Homepage - Bloc
 regions[HPBasGauche] = Zone Bas Gauche HP - Bloc
 regions[HPBasDroit] = Zone Bas Droit HP - Bloc
 regions[content_top] = Content top
+;Region pour admin dans node.tpl
+regions[content_top_node] = Conntent top node pour admin
 regions[formulaire] = Zone formulaire bloc
 regions[left] = Colonne Gauche
 regions[decoTitre] = Titre deco image - Fiche Formations

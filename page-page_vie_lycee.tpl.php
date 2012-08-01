@@ -11,7 +11,15 @@
 
               <?php print $content_top; ?>
             </div> <!-- /#content-top -->
-	 <!-- ______________________ COLONNE GAUCHE _______________________ -->
+
+            <!-- ______________________ CONTENT TOP NODE_______________________ -->
+               <?php if ($content_top_node): ?>
+            <div id="content-top-node">
+	              <?php print $content_top_node; ?>
+            </div> <!-- /#content-top-node -->
+            <?php endif; ?>  
+            
+            <!-- ______________________ COLONNE GAUCHE _______________________ -->
 
 			  <?php if ($left): ?>
          <div id="left-content-vie-lycee">

@@ -4,9 +4,6 @@
     
 	<div id="mainPage">
 	
-     
-   
-
           <?php if ($content_top): ?>
             <div id="content-top">
               <?php print $content_top; ?>
@@ -18,8 +15,6 @@
               <?php if ($DiapoHP): ?>
                  <div id="HPDiapo"><?php print $DiapoHP; ?></div>
               <?php endif; ?>
-              
-            
          
 <br clear="all"/>
 
@@ -47,7 +42,7 @@
 
                  </div>
               <?php endif; ?>  
-		 
+		  </div>
 <!-- ______________________ PARTIE BAS DROITE _______________________ -->
       
 	  
@@ -55,10 +50,7 @@
         <?php if ($HPBasDroit): ?>
      <div id="BasDroitHP"><?php print $HPBasDroit; ?></div>
         <?php endif; ?>
-		
-     
-	  
-   
+	
 	<br clear="all"/>
 	<!-- ______________________ CONTENU BAS _______________________ -->
     <?php if ($content_bottom_home): ?>
@@ -71,4 +63,4 @@
 	
 	 </div> <!-- /mainPage -->
      <?php include "inc_footer.php";?>
-<?php endif; ?>
+ <?php endif; ?>
