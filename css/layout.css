@@ -219,7 +219,7 @@ h6 {
  
 }
 #zone-1{width: 990px;margin: 0;padding: 0;}
-.col1_layout_200_590_200{}
+.col1_layout_200_590_200{width: 200px;}
 .col1_layout_330_all{}
 .col1_layout_18_56_25{}
 .col1_layout_225_700{width: 225px;padding: 5px;}
@@ -229,20 +229,15 @@ h6 {
     
 }
 #zone-2{width: 990px;margin: 0;padding: 0;}
-.col2_layout_200_590_200{}
+.col2_layout_200_590_200{width: 590px;}
 .col2_layout_330_all{}
 .col2_layout_18_56_25{}
 .col2_layout_225_700{width: 700px;padding: 5px;}
 .border-left{border-left: 1px solid #E3007A;}
 /*//////////////// COLONNE 3 \\\\\\\\\\\\\\\\*/
-#colonne-3{
-    width: 200px;
-    float: left;
-    margin: 0;
-    padding: 0;
-}
+#colonne-3{width: 200px;float: left;margin: 0;padding: 0;}
 #zone-3{width: 990px;margin: 0;padding: 0;}
-.col3_layout_200_590_200{}
+.col3_layout_200_590_200{width: 200px;}
 .col3_layout_330_all{}
 .col3_layout_18_56_25{}
 

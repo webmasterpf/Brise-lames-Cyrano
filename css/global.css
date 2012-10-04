@@ -39,7 +39,7 @@
 
 /*------- COULEURS DE BASE POUR CSS---------------∕∕
 rouge #E2001A
-rose #E2007A
+rose #11B0D5
 orange #F29400
 bleu #00AAD2
 vert #C8D215
@@ -526,7 +526,77 @@ _________________________________________*/
 
 #middle-content-pageMondePro a{}
 #middle-content-pageMondePro a:hover{}
+/*-------------------------------
+      ARCHIVES GLOBAL STYLE
+*/
+.content-archive{
+    border-left: 1px solid #11B0D5;
+    padding: 5px;
+}
+/*Bloc filtre exposé archives*/
+.archives-exposed{
+    width: 405px;
+    margin: 0 auto;
+}
+.archives-exposed .views-widget-filter-field_date_evenement_value{
+    width: 150px;
+}
+.archives-exposed .views-exposed-widgets{
+    width: inherit;
+    padding: 5px;
+    margin: 5px;
+    background: #EFEFEF;
+    border: #11B0D5 solid 2px;
+    box-shadow: inset 0px 0px 3px #606171;
+}
+.archives-exposed{}
+.archives-exposed{}
 
+/*Liste des archives*/
+#archives{}
+#archives table{
+    width: 98%
+}
+#archives tbody{}
+#archives tr{
+    background: #EFEFEF;
+    background-color: #EFEFEF;
+    display: block;
+    margin: 2px 0;
+}
+#archives tr :hover{
+    background: #C2E7EF;   
+    
+}
+#archives td{
+    padding: 2px 0;
+    display: inline-block;
+    width: 100%;
+}
+#archives td:hover{
+    border-right: #11B0D5 solid 2px;
+}
+#archives img{
+    border: #911381 1px solid;
+    float: right;
+    margin: 2px 4px;
+    padding: 2px;
+}
+#archives tr a{
+    color: #11B0D5;
+    text-decoration: none;
+    padding: 2px;
+    font-weight: bold;
+}
+#archives tr a:hover{
+    color: white;
+}
+#archives .views-field-tid{
+    text-align: right;
+    font-size: 10px;
+    font-style: italic;   
+}
+#archives .pager li.pager-current{background: #01AAD3;color:#EFEFEF;padding: 2px; }
 /*-------------
 Liste filtree argument*/
 #liste_filtre ul {
