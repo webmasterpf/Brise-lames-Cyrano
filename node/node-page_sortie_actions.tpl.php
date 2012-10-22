@@ -26,9 +26,10 @@
                     <?php  print $node->field_fiche_action_sortie[0]['view']  ?>
             </div>
              
-                
-            <div id="fichier-joint-vdl">
+           <div id="fichier-joint-vdl">
                     <?php  print $node->field_fichier_joint[0]['view']  ?>
+                  <?php  print $node->field_fichier_joint[1]['view']  ?>
+                  <?php  print $node->field_fichier_joint[2]['view']  ?>
             </div>
                  </div>
             <?php endif;?>

@@ -29,6 +29,8 @@
                 
             <div id="fichier-joint-vdl">
                     <?php  print $node->field_fichier_joint_innovation[0]['view']  ?>
+                 <?php  print $node->field_fichier_joint_innovation[1]['view']  ?>
+                 <?php  print $node->field_fichier_joint_innovation[2]['view']  ?>
             </div>
                  </div>
             <?php endif;?>

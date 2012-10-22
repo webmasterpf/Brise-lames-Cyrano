@@ -29,6 +29,8 @@
                 
             <div id="fichier-joint-vdl">
                     <?php  print $node->field_fichier_joint_intervenant[0]['view']  ?>
+                <?php  print $node->field_fichier_joint_intervenant[1]['view']  ?>
+                <?php  print $node->field_fichier_joint_intervenant[2]['view']  ?>
             </div>
                  </div>
             <?php endif;?>
