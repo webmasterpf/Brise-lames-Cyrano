@@ -63,7 +63,7 @@ padding:5px;
 /************PARTIE BASSE**************/
 #headBas{
 	width:990px;
-	height:130px;/*130px pour menu superfish-115px pour nice menu*/
+	height:115px;
 	float:none;
 	display:block;
 	margin:5px 0 0 0;

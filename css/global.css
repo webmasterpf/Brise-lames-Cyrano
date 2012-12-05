@@ -597,6 +597,21 @@ _________________________________________*/
     font-style: italic;   
 }
 #archives .pager li.pager-current{background: #01AAD3;color:#EFEFEF;padding: 2px; }
+
+/*==
+== Pager pour pages archives ===
+==*/
+#archives ul.pager{margin: 3px auto;width: 95%;display: block;padding: 3px;}
+#archives .pager li
+{float: left;}
+#archives .pager li a{color:#1F1F1F;}
+#archives .pager li.pager-item,#archives .pager li.pager-current
+{padding: 3px;border-radius: 10px; height: 15px;width: 15px;}
+#archives .pager li.pager-item
+{background:#91127D ;color:#EFEFEF;}
+#archives .pager li.pager-item a{color:#EFEFEF;}
+#archives .pager li.pager-current
+{background: #01A9D2;color:#3F3F3F;}
 /*-------------
 Liste filtree argument*/
 #liste_filtre ul {

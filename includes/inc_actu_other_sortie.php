@@ -27,9 +27,11 @@ $args_ag5 = $view->set_arguments(array(3));
 
 $emptyTextVue = $view->set_display('block_5')->display_options['empty'];
 $emptyText = $view->display_handler->set_option('empty','<div class="ma-classe">Pas de contenu à afficher.</div>');
+//Pour Views 2
 $footer_text = '<a href="/node/8" >Voir les archives</a>';
 $view->display_handler->set_option('footer',$footer_text);
-
+//Pour Views 3 
+$view->display[$viewdisplay_ag5]->set_options['footer'] = "$footer_text";
 //Exécution de le vue
 $view->pre_execute();
 $view->execute();
@@ -37,7 +39,9 @@ $view->execute();
 if (!empty($view->result)) {
   // S'il y a un resultat on récupère le titre (ajoute tag h3, et le contenu)
   $output = '<div id="other-sortie"><h3 class="CLASS_NAME">'.$view->get_title().'</h3>' .$view->preview($viewdisplay_ag5,$args_ag5).'</div>';
-
+//Debug
+drupal_set_message('$Footer Views3: '.$FooterV3,'status');
+drupal_set_message('$EmptyTextVue Views3 : '.$emptyTextVue_v3,'status');
   //Affiche la vue si contenu
 print $output;
 }
@@ -46,9 +50,10 @@ elseif (empty($view->result)) {
     //Formatage du texte vide,ajout du titre de la vue
      $outputEmpty = '<div id="other-sortie"><h3 class="CLASS_NAME">'.$view->get_title().'</h3>' .$emptyText.'<br>'.$emptyTextVue.'</div>';
     // drupal_set_message('$EmptyTextVue : '.$emptyTextVue,'status');
+     //drupal_set_message('$EmptyTextVue Views3 : '.$emptyTextVue_v3,'status');
+     
+    
      //Affichage du texte vide
   print $outputEmpty;
 }
-
-
 ?>

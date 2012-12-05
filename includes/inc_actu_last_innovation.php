@@ -26,7 +26,7 @@ $viewdisplay_ag1 = $view->set_display('block_1');
 $args_ag1 = $view->set_arguments(array(7));
 
 $emptyTextVue = $view->set_display('block_1')->display_options['empty'];
-$emptyText = $view->display_handler->set_option('empty','<div class="ma-classe">Nous ne proposons pas de formation de ce type pour le moment.</div>');
+$emptyText = $view->display_handler->set_option('empty','<div class="ma-classe">Bientôt un nouveau contenu sera disponible.</div>');
 
 //Exécution de le vue
 $view->pre_execute();

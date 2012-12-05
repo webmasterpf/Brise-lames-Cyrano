@@ -10,16 +10,29 @@ stylesheets[all][] = css/reset.css
 stylesheets[all][] = css/layout-home.css
 stylesheets[all][] = css/layout.css
 stylesheets[all][] = css/global.css
-stylesheets[all][] = css/nice_menus_custom.css
-stylesheets[all][] = css/nice_menu_down-horiz-children.css
-stylesheets[all][] = css/nice_menus_default.css
 stylesheets[all][] = css/style-backoffice.css
 stylesheets[all][] = css/search.css
 stylesheets[all][] = css/maintenance.css
 
+; CSS pour utiliser NiceMenu
+stylesheets[all][] = css/navigation/nice_menus_custom.css
+stylesheets[all][] = css/navigation/nice_menu_down-horiz-children.css
+; CSS pour utiliser MegaMenu
+;stylesheets[all][] = css/navigation/megamenu-skins.css
+; CSS pour utiliser Superfish menu
+superfish_styles[pfbl] = Ajout d'un style custom pour Superfish  
+stylesheets[all][] = css/navigation/superfish/brise-lames-superfish.css
+stylesheets[all][] = css/navigation/superfish/superfish-navbar.css
+stylesheets[all][] = css/navigation/superfish/pfbl.css
+
+;CSS Override pour le site : Galeries
+stylesheets[all][] = css/css_galeries/views_galleriffic_default.css
+stylesheets[all][] = css/css_galeries/views_showcase.css
+stylesheets[all][] = css/css_galeries/views_slideshow.css
+stylesheets[all][] = css/css_galeries/nivo-slider.css
 
 regions[header] = Header
-regions[menuDyn] = Menu Header - Nice Menu
+regions[menuDyn] = Menu Dynamique Javascript - Header
 regions[navStatic] = Navigation par images - Bloc
 regions[DiapoHP] = Diaporama Homepage - Bloc
 regions[HPBasGauche] = Zone Bas Gauche HP - Bloc
