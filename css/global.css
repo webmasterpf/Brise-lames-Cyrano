@@ -402,10 +402,15 @@ _________________________________________*/
 /*--------------------------------------
 **** PAGE ACTU REDESIGN - AFFICHE ******
 _________________________________________*/
+#last-sortie .views-field-title,#last-annonce .views-field-title,#last-innovation .views-field-title,
+#last-projets .views-field-title,#last-rp .views-field-title
+{color: black;font-style: italic;}
+
 #last-sortie,#last-projets,#last-innovation,#last-rp,#last-annonce{width: 198px;float: left;}
 #last-sortie .views-field-nothing{color: #95127C;font-weight: bold;}
 #last-sortie img{border: 3px solid #95127C;}
 #last-sortie .views-field-teaser{}
+
 
 #other-sortie, #other-projets,#other-innovations,#other-rp,#other-annonce{width: 180px;float: left;margin: 0 4px;padding: 0 2px;}
 #other-sortie{border: 3px solid #95127C;}
