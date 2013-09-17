@@ -16,10 +16,7 @@
  */
 
 ?>
-
-
-    <?php
-
+<?php
 $viewname_ag5 = 'Actu_globale';
 $view = views_get_view ($viewname_ag5);
 $viewdisplay_ag5 = $view->set_display('block_5');
