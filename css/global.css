@@ -322,7 +322,7 @@ _________________________________________*/
 .bloc-pole h3{text-align: center;margin:0 0 5px 0;}
 .bloc-pole .complement{text-align: center;font-style: italic;color: #7A7B85;display: block;}
 
-#vente table{width:235px;background: #EFEFEF;border:3px solid #F39300;padding: 3px;}
+/*#vente table{width:235px;background: #EFEFEF;border:3px solid #F39300;padding: 3px;}
 #restauration table{width:235px;background:#EFEFEF;border:3px solid #ADC91F;padding: 3px;margin: 22px 0 0 0;}
 #gestion table{width:235px;background: #EFEFEF;border:3px solid #01AAD3;padding: 3px;}
 #postbac table{width:235px;background: #EFEFEF;border:3px solid #E1017B;padding: 3px;margin: 22px 0 0 0;}
@@ -332,7 +332,20 @@ _________________________________________*/
 #restauration h3{color: #ADC91F;}
 #postbac h3{color: #E1017B;}
 #vente tr,#gestion tr,#restauration tr,#postbac tr{margin: 2px 0;}
-#vente td,#gestion td,#restauration td,#postbac td{padding: 10px 5px;display: block;}
+#vente td,#gestion td,#restauration td,#postbac td{padding: 10px 5px;display: block;}*/
+
+/**** MODIF 2014 ****/
+#orange table{width:235px;background: #EFEFEF;border:3px solid #F39300;padding: 3px;}
+#bleu table{width:235px;background:#EFEFEF;border:3px solid #ADC91F;padding: 3px;margin: 22px 0 0 0;}
+#vert table{width:235px;background: #EFEFEF;border:3px solid #01AAD3;padding: 3px;}
+#rose table{width:235px;background: #EFEFEF;border:3px solid #E1017B;padding: 3px;margin: 22px 0 0 0;}
+
+#orange h3{color: #F39300;}
+#vert h3{color: #01AAD3;}
+#bleu h3{color: #ADC91F;}
+#rose h3{color: #E1017B;}
+#orange tr,#vert tr,#bleu tr,#rose tr{margin: 2px 0;}
+#orange td,#vert td,#bleu td,#rose td{padding: 10px 5px;display: block;}
 
 /************************/
 /*STYLE FICHE FORMATION*/

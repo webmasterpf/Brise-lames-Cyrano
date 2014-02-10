@@ -28,9 +28,10 @@ $term = preg_replace('<code>\s+</code>', '<em>', trim($term));
 }
 function cyrano_bl_preprocess_node(&$vars, $hook) {
 //Partie regions dans node.tpl- ajoute les regions utiles au node.tpl
- $vars['pole_bloc_G'] = theme('blocks', 'pole_bloc_G');
- $vars['pole_bloc_C'] = theme('blocks', 'pole_bloc_C');
- $vars['pole_bloc_D'] = theme('blocks', 'pole_bloc_D');
+ $vars['pole_1'] = theme('blocks', 'pole_1');
+ $vars['pole_2'] = theme('blocks', 'pole_2');
+ $vars['pole_3'] = theme('blocks', 'pole_3');
+ $vars['pole_4'] = theme('blocks', 'pole_4');
  $vars['col_G1'] = theme('blocks', 'col_G1');
  $vars['col_G2'] = theme('blocks', 'col_G2');
  $vars['col_G3'] = theme('blocks', 'col_G3');

@@ -1,7 +1,6 @@
 <?php
 /* Ce template permet la création d'un layout multicolonne pour les pages de base, en permettant la disposition facile
  * des champs CCK custom, si nécessaires pour une page de base.
- * Modifier en 02/2014 pour nouveau système de blocs
 */?>
 <!--______________NODE TPL POUR POLE.TPL CUSTOM________________ -->
 <div class="node <?php print $classes; ?>" id="node-<?php print $node->nid; ?>">
@@ -27,39 +26,28 @@
                 <?php   print $node->content['body']['#value'];/*déplacer le contenu dans la colonne désirée*/ ?>
             </div>
             
-          <?php //regions pour affiche le pole vente-commerce
-            if ($pole_1):
-                ?>
-                <div id="orange" class="bloc-pole">
-                <?php print $pole_1; ?>
-                </div>
-            <?php endif; ?>
             
-              <?php //regions pour affiche le pole gestion-admin
-            if ($pole_2):
-                ?>
-                <div id="bleu" class="bloc-pole">
-                <?php print $pole_2; ?>
-                </div>
-            <?php endif; ?>
+             <?php
+              $theme_path = drupal_get_path('theme', 'cyrano_bl');
+              include ($theme_path.'/includes/inc_pole_vente.php');
+              ?>
+             <?php
+              $theme_path = drupal_get_path('theme', 'cyrano_bl');
+              include ($theme_path.'/includes/inc_pole_gestion.php');
+              ?>
+             <?php
+              $theme_path = drupal_get_path('theme', 'cyrano_bl');
+              include ($theme_path.'/includes/inc_pole_restauration.php');
+              ?>
+             <?php
+              $theme_path = drupal_get_path('theme', 'cyrano_bl');
+              include ($theme_path.'/includes/inc_pole_postbac.php');
+              ?>
             
-              <?php //regions pour affiche le pole restauration
-            if ($pole_3):
-                ?>
-                <div id="vert" class="bloc-pole">
-                <?php print $pole_3; ?>
-                </div>
-            <?php endif; ?>
-            
-              <?php //regions pour affiche le pole reussite scolaire
-            if ($pole_4):
-                ?>
-                <div id="rose" class="bloc-pole">
-                <?php print $pole_4; ?>
-                </div>
-            <?php endif; ?>
-            
-            
+             <?php
+              $theme_path = drupal_get_path('theme', 'cyrano_bl');
+              include ($theme_path.'/includes/inc_region_col_G1.php');
+              ?>
         </div>
        
 

@@ -56,6 +56,11 @@ regions[projets] = Zone pour les projets - Vue Bloc
 regions[intervenants] = Zone pour les Intervenants - Vue Bloc
 ;Region pour formulaire
 regions[formulaire] = Formulaire (centre) - Webform Bloc
+;Regions inclus dans node.tpl
+regions[pole_1] = Zone pour pôle 1
+regions[pole_2] = Zone pour pôle 2
+regions[pole_3] = Zone pour pôle 3
+regions[pole_4] = Zone pour pôle 4
 
 settings[basic_zen_tabs]             = 1
 settings[basic_wireframe]            = 0
