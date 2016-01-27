@@ -62,6 +62,9 @@ padding:5px;
 #navPicto a {border:0;font-family: arista,Trebuchet MS, sans-serif;
 text-align: center;color:#11B0D5;font-size: 23px;text-decoration: none;}
 #navPicto a:hover{color: #970F7D;}
+/*couleur différente pour le bouton restaurant*/
+#navPicto a.nav-resto {color: #970F7D;}
+#navPicto a.nav-resto:hover{color:#11B0D5;}
 /************PARTIE BASSE**************/
 #headBas{
 	width:990px;
