@@ -8,6 +8,7 @@ function phptemplate_preprocess(&$vars, $hook)
       if (arg(0) == 'node')
       {
         $vars['template_files'][]  = 'page-' . $vars['node']->type;
+        $vars['template_files'][] = "page-" . $vars['node']->type . "-" . $vars['node']->nid;
       }
       break;
   }

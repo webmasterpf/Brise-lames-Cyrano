@@ -95,6 +95,9 @@ float:left;
 background-color: white;
 
 }
+#content-inner-full{
+    width: 100%;
+}
 /*///    partie du centre   ///*/
 #middle-content{
     	float:left;
@@ -107,7 +110,9 @@ background-color: white;
         border-left: 1px solid #ACC624;
         border-right: 1px solid #F8E91B;
  }
-
+ #middle-content-full{
+     width: 100%;
+ }
 /*PIED DE CONTENU*/
 #content-bottom{
 background:transparent;
@@ -223,6 +228,7 @@ h6 {
 .col1_layout_330_all{}
 .col1_layout_18_56_25{}
 .col1_layout_225_700{width: 225px;padding: 5px;}
+.col1_layout_710_235{width: 710px;padding: 5px;}
 /*//////////////// COLONNE 2 \\\\\\\\\\\\\\\\*/
 #colonne-2, #middle-content-override{
     float: left;
@@ -233,6 +239,7 @@ h6 {
 .col2_layout_330_all{}
 .col2_layout_18_56_25{}
 .col2_layout_225_700{width: 700px;padding: 5px;}
+.col2_layout_710_235{width: 235px;padding: 5px;}
 .border-left{border-left: 1px solid #E3007A;}
 /*//////////////// COLONNE 3 \\\\\\\\\\\\\\\\*/
 #colonne-3{width: 200px;float: left;margin: 0;padding: 0;}
@@ -604,3 +611,33 @@ background-color: white;
    padding: 3px;
 }
 #right-content-pageErreur{}
+
+/*//////////////// BORDER RIGHT \\\\\\\\\\\\\\\\*/
+.border-R-orangePF{border-right: 1px solid #DA5714;}
+.border-R-anthracite{border-right: 1px solid #606171;}
+.border-R-vert{border-right: 1px solid #ADC91F;}
+.border-R-rose{ border-right: 1px solid #E2007A;}
+.border-R-bleu{border-right: 1px solid #00AAD2;}
+/*//////////////// BORDER COLONNE 2 \\\\\\\\\\\\\\\\*/
+.border-rouge-bleu{ border-left: 1px solid #E2001A; border-right: 1px solid #00AAD2;}
+.border-rose-bleu { border-left: 1px solid #E2007A; border-right: 1px solid #00AAD2;}
+.border-noir-vert { border-left: 1px solid #606171; border-right: 1px solid #C8D215;}
+.border-bleu-violet { border-left: 1px solid #00AAD2; border-right: 1px solid #93117E;}
+.border-vert-violet { border-left: 1px solid #ADC91F; border-right: 1px solid #93117E;}
+.border-anthracite-orangePF{border-left: 1px solid #606071;border-right: 1px solid #DA5714;}
+
+/*//////////////// BORDER LEFT \\\\\\\\\\\\\\\\*/
+.border-L-bleu{border-left: 1px solid #02A7D5;}
+.border-L-grisclair{border-left: 1px solid #CFD0D2;}
+.border-L-vert{border-left: 1px solid #ADC91F;}
+.border-L-violet{border-left: 1px solid #93117E;}
+.border-L-anthracite{border-left: 1px solid #606171;}
+.border-L-rose { border-left: 1px solid #E2007A;}
+/*//////////////// BORDER COLONNE 2 \\\\\\\\\\\\\\\\*/
+.rouge-bleu{ border-left: 1px solid #E2001A; border-right: 1px solid #00AAD2;}
+.rose-bleu { border-left: 1px solid #E2007A; border-right: 1px solid #00AAD2;}
+.noir-vert { border-left: 1px solid #606171; border-right: 1px solid #C8D215;}
+.bleu-violet { border-left: 1px solid #00AAD2; border-right: 1px solid #93117E;}
+.vert-violet { border-left: 1px solid #C8D215; border-right: 1px solid #93117E;}
+.anthracite-orange{border-left: 1px solid #606070;border-right: 1px solid #E75130;}
+/*//////////////// BORDER COLONNE 3 \\\\\\\\\\\\\\\\*/

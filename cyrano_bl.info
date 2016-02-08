@@ -61,6 +61,10 @@ regions[pole_1] = Zone pour pôle 1
 regions[pole_2] = Zone pour pôle 2
 regions[pole_3] = Zone pour pôle 3
 regions[pole_4] = Zone pour pôle 4
+;Regions inclus dans node.tpl
+regions[col_G1] = Colonne 1
+regions[col_G2] = Colonne 2
+regions[col_G3] = Colonne 3
 
 settings[basic_zen_tabs]             = 1
 settings[basic_wireframe]            = 0

@@ -278,6 +278,22 @@ padding:10px 0;
 .pageLycee strong{
     color: #E2017B;
 }
+.pageLycee a{
+    color: #11B0D5;
+    text-decoration: none;
+}
+.pageLycee a:hover{
+   text-decoration: underline;
+}
+.pageLycee .logo-resto{
+    float: right;
+}
+.pageLycee .menu-resto a{
+    color: #E2017B;
+}
+.pageLycee .menu-resto a:hover{
+    color: #01A9D2;
+}
 /*STYLE PAGE FORMATIONS INITIALES ARBRE*/
 #table-offre-formation, #table-offre-formation tbody{
     width: 953px !important;
@@ -632,22 +648,22 @@ _________________________________________*/
 {background: #01A9D2;color:#3F3F3F;}
 /*-------------
 Liste filtree argument*/
-#liste_filtre ul {
+.liste-filtre ul #liste_filtre ul {
     list-style: circle outside none;
     margin: 0 0 0 15px;
 }
-#liste_filtre ul li{
+#liste_filtre ul li, .liste-filtre ul li{
     list-style: inherit;
 }
-#liste_filtre .views-field-title a{
+#liste_filtre .views-field-title a, .liste-filtre .views-field-title a{
     color: #11B0D5;
     font-size: 14px;
 }
-#liste_filtre p{
+#liste_filtre p, .liste-filtre p{
     color: black;
     text-transform: lowercase;
 }
-#liste_filtre h3,strong{
+#liste_filtre h3,strong, .liste-filtre h3{
     font-size: 12px;
     margin: 0;
     padding: 0;

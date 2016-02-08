@@ -19,14 +19,24 @@
             </div> <!-- /#content-top-node -->
             <?php endif; ?>  
             
-     
+            <!-- ______________________ COLONNE GAUCHE _______________________ -->
+
+			  <?php if ($left): ?>
+         <div id="left-content" class="pageLycee">
+           
+            <?php print $left; ?>
+          </div>
+             <?php endif; ?> <!-- /sidebar-left -->
       
        <!-- ______________________ CONTENT INNER _______________________ -->
 		
         
-        <div id="content-inner-full" class="inner column center">
+        <div id="content-inner-base2col" class="inner column center">
 		             
-	
+		    <?php if ($title): ?>
+                <h1 class="title"><?php print $title; ?></h1>
+              <?php endif; ?>
+           
 
           <?php if ($mission || $messages || $help || $tabs): ?>
             <div id="content-header">              
@@ -46,7 +56,7 @@
             </div> <!-- /#content-header -->
           <?php endif; ?>
 		  <!-- ______________________ CONTENU CENTRAL _______________________ -->
-          <div id="middle-content-full">
+          <div id="middle-content-base2col" class="pageLycee">
             <?php print $content; ?>
               <?php print $feed_icons; ?>
           </div> <!-- /#content-area -->
@@ -66,6 +76,16 @@
         <?php endif; ?>
 
        
+		  <!-- ______________________ COLONNE DROITE _______________________ -->
+        <?php if ($right): ?>
+         <!--debut du contenu droit -->
+		<div id="right-content-base2col" class="pageLycee">
+			
+				
+            <?php print $right; ?>
+        </div>
+        <?php endif; ?> <!-- /sidebar-right -->
+
    
     	 <br clear="all"/>
          <!-- ______________________ CONTENU BAS _______________________ -->
