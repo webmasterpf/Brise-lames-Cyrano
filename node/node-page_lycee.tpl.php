@@ -24,6 +24,12 @@
             <?php endif;?>
                 <?php   print $node->content['body']['#value'];/*déplacer le contenu dans la colonne désirée*/ ?>
              
+                        <?php if ($node->field_fichier_attache[0]['view']): ?>
+            <div class="menu-resto">
+                    <?php  print $node->field_fichier_attache[0]['view']  ?>
+            </div>
+            <?php endif;?>
+                      
          <?php if ($node->field_choix_galerie_vdl[0]['view']): /* Galerie d'images */?>
             <div class="galerie-resto">
                     <?php  print $node->field_choix_galerie_vdl[0]['view']  ?>
@@ -52,11 +58,7 @@
             <span class="submitted"><?php print $submitted; ?></span>
             <?php endif; ?>
 
-                 <?php if ($node->field_fichier_attache[0]['view']): ?>
-            <div class="menu-resto">
-                    <?php  print $node->field_fichier_attache[0]['view']  ?>
-            </div>
-            <?php endif;?>
+               
                    <?php
               $theme_path = drupal_get_path('theme', 'cyrano_bl');
               include ($theme_path.'/includes/inc_region_col_G2.php');

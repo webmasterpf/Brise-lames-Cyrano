@@ -9,7 +9,7 @@ function cyrano_bl_preprocess(&$vars, $hook)
       {
         $vars['template_files'][]  = 'page-' . $vars['node']->type;
        // $vars['template_files'][] = "page-" . $vars['node']->type . "-" . $vars['node']->nid;
-        //$vars['template_files'][] = 'node-'. $vars['node']->nid;  
+       
       }
       break;
   }
@@ -70,6 +70,8 @@ if ( in_array($node->type,$lesTypes) ) {
  //drupal_set_message('Type du node hors : '.$node->type,'status');
 // drupal_set_message('Term name hors : '.$term->name,'status');
     }
+    //template suggestion pour les nodes
+     $vars['template_files'][] = 'node-'. $vars['node']->nid;  
 }
 ?>
 <?php
