@@ -2,7 +2,7 @@
 /* Ce template permet la création d'un layout multicolonne pour les pages de base, en permettant la disposition facile
  * des champs CCK custom, si nécessaires pour une page de base.
 */?>
-<!--______________NODE TPL POUR PAGE.TPL RESTAURANT  CUSTOM________________ -->
+<!--______________NODE TPL(ID) POUR PAGE.TPL RESTAURANT  CUSTOM________________ -->
 <div class="node <?php print $classes; ?>" id="node-<?php print $node->nid; ?>">
  <div class="node-inner">
         <!--______________COLONNE 1________________ -->

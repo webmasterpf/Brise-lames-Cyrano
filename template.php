@@ -1,6 +1,6 @@
 <?php
 // permet template suggestions avec page-
-function phptemplate_preprocess(&$vars, $hook)
+function cyrano_bl_preprocess(&$vars, $hook)
 {
   switch($hook)
   {
@@ -8,7 +8,8 @@ function phptemplate_preprocess(&$vars, $hook)
       if (arg(0) == 'node')
       {
         $vars['template_files'][]  = 'page-' . $vars['node']->type;
-        $vars['template_files'][] = "page-" . $vars['node']->type . "-" . $vars['node']->nid;
+       // $vars['template_files'][] = "page-" . $vars['node']->type . "-" . $vars['node']->nid;
+        //$vars['template_files'][] = 'node-'. $vars['node']->nid;  
       }
       break;
   }
