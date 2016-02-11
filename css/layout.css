@@ -229,6 +229,7 @@ h6 {
 .col1_layout_18_56_25{}
 .col1_layout_225_700{width: 225px;padding: 5px;}
 .col1_layout_710_235{width: 710px;padding: 5px;}
+.col1_layout_610_335{width: 610px;padding: 5px;}
 /*//////////////// COLONNE 2 \\\\\\\\\\\\\\\\*/
 #colonne-2, #middle-content-override{
     float: left;
@@ -240,6 +241,7 @@ h6 {
 .col2_layout_18_56_25{}
 .col2_layout_225_700{width: 700px;padding: 5px;}
 .col2_layout_710_235{width: 235px;padding: 5px;}
+.col2_layout_610_335{width: 335px;padding: 5px;}
 .border-left{border-left: 1px solid #E3007A;}
 /*//////////////// COLONNE 3 \\\\\\\\\\\\\\\\*/
 #colonne-3{width: 200px;float: left;margin: 0;padding: 0;}

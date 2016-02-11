@@ -11,7 +11,7 @@
          * .col2_layout_200_590_200{} .col2_layout_330_all{} .col2_layout_18_56_25{}
          * .col3_layout_200_590_200{} .col3_layout_330_all{} .col3_layout_18_56_25{}
          */?>
-        <div id="colonne-1" class="pageLycee col1_layout_710_235 border-R-rose">
+        <div id="colonne-1" class="pageLycee col1_layout_610_335 border-R-rose">
             <?php if ($title): /*copier le titre dans la colonne desirée*/?>
             <h1 class="titre_page"><?php print $title; ?></h1>
             <?php endif; ?>
@@ -37,7 +37,7 @@
         </div>
         <!--______________COLONNE 2________________ -->
          <!-- <pre> <?php //print_r($node); ?> </pre>-->   <!-- listage des variables du $content -->
-        <div id="colonne-2" class="pageLycee col2_layout_710_235">
+        <div id="colonne-2" class="pageLycee col2_layout_610_335">
 
             <?php print $picture; ?>
 
@@ -47,12 +47,13 @@
 
                  <?php if ($node->field_fichier_attache[0]['view']): ?>
             <div class="menu-resto">
+                <h3>Le Menu du Restaurant</h3>
                     <?php  print $node->field_fichier_attache[0]['view']  ?>
             </div>
             <?php endif;?>
                    <?php
               $theme_path = drupal_get_path('theme', 'cyrano_bl');
-              include ($theme_path.'/includes/inc_region_col_G3.php');
+              include ($theme_path.'/includes/inc_region_col_G2.php');
               ?>
       
 

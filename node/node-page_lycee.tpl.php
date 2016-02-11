@@ -25,13 +25,13 @@
                 <?php   print $node->content['body']['#value'];/*déplacer le contenu dans la colonne désirée*/ ?>
              
                         <?php if ($node->field_fichier_attache[0]['view']): ?>
-            <div class="menu-resto">
+            <div class="fichier-joint">
                     <?php  print $node->field_fichier_attache[0]['view']  ?>
             </div>
             <?php endif;?>
                       
          <?php if ($node->field_choix_galerie_vdl[0]['view']): /* Galerie d'images */?>
-            <div class="galerie-resto">
+            <div class="galerie">
                     <?php  print $node->field_choix_galerie_vdl[0]['view']  ?>
             </div>
             <?php endif;?>       

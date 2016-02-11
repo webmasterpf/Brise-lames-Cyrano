@@ -288,11 +288,28 @@ padding:10px 0;
 .pageLycee .logo-resto{
     float: right;
 }
+.pageLycee .menu-resto{
+      text-align: center;
+  margin: 5px;
+  background: azure;
+}
 .pageLycee .menu-resto a{
     color: #E2017B;
+    padding: 10px;display: block;
 }
 .pageLycee .menu-resto a:hover{
     color: #01A9D2;
+}
+.pageLycee .menu-resto .filefield-icon{display: none;}
+#colonne-2.pageLycee .menu-resto h3{color: #01A9D2}
+#colonne-2.pageLycee h3{text-align: center;color: #91127D; font-size: x-large;}
+/*--- MODULE RESA ---*/
+#colonne-2.pageLycee {}
+#colonne-2 iframe #main .content{
+    background: #01A9D2;
+}
+#colonne-2 .pageLycee  #main .content{
+    background: #01A9D2;
 }
 /*STYLE PAGE FORMATIONS INITIALES ARBRE*/
 #table-offre-formation, #table-offre-formation tbody{
